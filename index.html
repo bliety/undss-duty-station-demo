@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="UNDSS Duty Station Intelligence — local-first pilot dashboard, Alderra (fictional)">
+  <meta name="description" content="UNDSS Duty Station Intelligence — local-first pilot dashboard, South Sudan">
   <title>Duty Station Intelligence | Fictional Preview</title>
   <style>
 :root{--un-blue:#009edb;--un-blue-dark:#007bb6;--navy:#0d2c47;--navy2:#173b59;--ink:#173148;--muted:#687c8c;--border:#dae4ea;--surface:#fff;--page:#f3f7f9;--sky:#e8f6fb;--soft:#f9fbfd;--green:#15805c;--amber:#bf7b19;--red:#ae4242;--shadow:0 4px 20px rgba(20,51,75,.045)}
@@ -30,543 +30,542 @@
 window.UNDSS_SEED_DATA =
 {
   "metadata": {
-    "name": "Fictional Duty Station Dashboard — populated demo",
-    "version": "2.0-demo",
-    "countryScope": "4 invented countries",
+    "name": "UNDSS-style Duty Station Dashboard — public synthetic preview",
+    "version": "3.0-names-real-values-fake",
+    "countryScope": "Real duty-station names; synthetic metrics",
     "built": "2026-11-04",
-    "reviewHeader": "SAMPLE DATA · 2026 / 2027",
-    "dangerPriorPeriod": "July 2026 · sample",
-    "dangerPayPeriod": "October 2026 · sample",
-    "familyCurrentPeriod": "1 July 2026 · sample",
-    "familySubmissionPeriod": "1 January 2027 · sample",
-    "incidentsPeriod": "January–September 2026 · synthetic",
+    "reviewHeader": "DEMO · NO OFFICIAL DATA",
+    "dangerPriorPeriod": "July 2026 (FAKE)",
+    "dangerPayPeriod": "October 2026 (FAKE)",
+    "familyCurrentPeriod": "1 July 2026 (FAKE)",
+    "familySubmissionPeriod": "1 January 2027 (FAKE)",
+    "incidentsPeriod": "January–September 2026 (FAKE)",
     "sources": [
       {
         "key": "danger",
-        "label": "Danger Pay · fictional",
-        "file": "SYNTHETIC_Danger_Pay.xlsx",
+        "label": "Danger Pay · SYNTHETIC",
+        "file": "DEMO_NOT_REAL_Danger.xlsx",
         "sheet": "Demo",
-        "field": "October 2026 Y/N (fictional)"
+        "field": "Fictional Y/N values for design review"
       },
       {
         "key": "security",
-        "label": "Security ratings · fictional",
-        "file": "SYNTHETIC_Security.xlsx",
+        "label": "Security Ratings · SYNTHETIC",
+        "file": "DEMO_NOT_REAL_Security.xlsx",
         "sheet": "Demo",
-        "field": "Current / recommended rating (fictional)"
+        "field": "Fictional current / proposed rating"
       },
       {
         "key": "family",
-        "label": "Family restrictions · fictional",
-        "file": "SYNTHETIC_Family.xlsx",
+        "label": "Family Restrictions · SYNTHETIC",
+        "file": "DEMO_NOT_REAL_NFDS.xlsx",
         "sheet": "Demo",
-        "field": "Non-family and hardship fields (fictional)"
+        "field": "Fictional Y/N restrictions"
       },
       {
         "key": "events",
-        "label": "SSIRS · fictional",
-        "file": "SYNTHETIC_SSIRS.xlsx",
+        "label": "SSIRS · SYNTHETIC",
+        "file": "DEMO_NOT_REAL_SSIRS.xlsx",
         "sheet": "Demo",
-        "field": "Country-month incident counts (fictional)"
+        "field": "Fictional monthly count per country"
       },
       {
         "key": "areas",
-        "label": "SRM · fictional",
-        "file": "SYNTHETIC_SRM.xlsx",
+        "label": "SRM · SYNTHETIC",
+        "file": "DEMO_NOT_REAL_SRM.xlsx",
         "sheet": "Demo",
-        "field": "Regional present/projected risks (fictional)"
+        "field": "Fictional assessment risks"
       }
     ],
-    "coordinateDisclaimer": "Numerical coordinates are fictional. They do not represent ICSC duty stations, real-world sites, UN facilities, or approved navigational information."
+    "coordinateDisclaimer": "REAL place names; FAKE numerical coordinates. Not ICSC geocodes, not site locations or navigation information. Map opening disabled."
   },
   "stations": [
     {
-      "id": "DEMO-ALD-01",
-      "country": "Alderra (fictional)",
-      "name": "Northhaven (sample)",
-      "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "id": "DEMO-SSD-01",
+      "country": "South Sudan",
+      "name": "Juba",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "A",
       "securityRecommended": "A",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "B",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "C",
       "nfdJuly2026": "Y",
       "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-ALD-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SSD-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 11.26,
-      "longitude": 15.74,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 6.64,
+      "longitude": 29.78,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-ALD-02",
-      "country": "Alderra (fictional)",
-      "name": "Port Alder (sample)",
+      "id": "DEMO-SSD-02",
+      "country": "South Sudan",
+      "name": "Wau",
       "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "B",
       "securityRecommended": "B",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "C",
-      "nfdJuly2026": "N",
-      "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-ALD-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
-      "sourceRows": {},
-      "latitude": 12.13,
-      "longitude": 16.87,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
-    },
-    {
-      "id": "DEMO-ALD-03",
-      "country": "Alderra (fictional)",
-      "name": "Dunmere (sample)",
-      "dangerPayOct2026": "N",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "C",
-      "securityRecommended": "D",
-      "securityComment": "Simulated recommendation C → D",
+      "securityComment": "Synthetic sample: no change",
       "hardshipJuly2026": "D",
       "nfdJuly2026": "N",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-ALD-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SSD-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 13,
-      "longitude": 18,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 6.97,
+      "longitude": 30.19,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-ALD-04",
-      "country": "Alderra (fictional)",
-      "name": "Eastbank (sample)",
-      "dangerPayOct2026": "N",
+      "id": "DEMO-SSD-03",
+      "country": "South Sudan",
+      "name": "Malakal",
+      "dangerPayOct2026": "Y",
       "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "C",
+      "securityRecommended": "D",
+      "securityComment": "Synthetic sample: C to D",
+      "hardshipJuly2026": "E",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "N",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SSD-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
+      "sourceRows": {},
+      "latitude": 7.3,
+      "longitude": 30.6,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+    },
+    {
+      "id": "DEMO-SSD-04",
+      "country": "South Sudan",
+      "name": "Bentiu",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "D",
       "securityRecommended": "C",
-      "securityComment": "Simulated recommendation D → C",
-      "hardshipJuly2026": "E",
-      "nfdJuly2026": "N",
-      "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-ALD-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
-      "sourceRows": {},
-      "latitude": 13.87,
-      "longitude": 19.13,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
-    },
-    {
-      "id": "DEMO-ALD-05",
-      "country": "Alderra (fictional)",
-      "name": "Ridgepoint (sample)",
-      "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "E",
-      "securityRecommended": "E",
-      "securityComment": "No change (synthetic)",
+      "securityComment": "Synthetic sample: D to C",
       "hardshipJuly2026": "A",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "Y",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SSD-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
+      "sourceRows": {},
+      "latitude": 7.63,
+      "longitude": 31.01,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+    },
+    {
+      "id": "DEMO-SSD-05",
+      "country": "South Sudan",
+      "name": "Bor",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "E",
+      "securityRecommended": "E",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "B",
       "nfdJuly2026": "Y",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-ALD-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SSD-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 14.74,
-      "longitude": 20.26,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 7.96,
+      "longitude": 31.42,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-BRI-01",
-      "country": "Brinovia (fictional)",
-      "name": "Bellford (sample)",
-      "dangerPayOct2026": "N",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "id": "DEMO-KEN-01",
+      "country": "Kenya",
+      "name": "Nairobi",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "C",
       "securityRecommended": "C",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "C",
-      "nfdJuly2026": "N",
-      "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-BRI-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
-      "sourceRows": {},
-      "latitude": 21.31,
-      "longitude": 41.68,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
-    },
-    {
-      "id": "DEMO-BRI-02",
-      "country": "Brinovia (fictional)",
-      "name": "Stonegate (sample)",
-      "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "D",
-      "securityRecommended": "E",
-      "securityComment": "Simulated recommendation D → E",
+      "securityComment": "Synthetic sample: no change",
       "hardshipJuly2026": "D",
       "nfdJuly2026": "N",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-BRI-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-KEN-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 22.18,
-      "longitude": 42.81,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": -1.435,
+      "longitude": 35.555,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-BRI-03",
-      "country": "Brinovia (fictional)",
-      "name": "Greenford (sample)",
+      "id": "DEMO-KEN-02",
+      "country": "Kenya",
+      "name": "Mombasa",
       "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "E",
-      "securityRecommended": "D",
-      "securityComment": "Simulated recommendation E → D",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "D",
+      "securityRecommended": "E",
+      "securityComment": "Synthetic sample: D to E",
       "hardshipJuly2026": "E",
       "nfdJuly2026": "Y",
-      "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-BRI-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "nfdJan2027": "N",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-KEN-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 23.05,
-      "longitude": 43.94,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": -1.105,
+      "longitude": 35.965,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-BRI-04",
-      "country": "Brinovia (fictional)",
-      "name": "Highmoor (sample)",
+      "id": "DEMO-KEN-03",
+      "country": "Kenya",
+      "name": "Kisumu",
       "dangerPayOct2026": "N",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "E",
+      "securityRecommended": "D",
+      "securityComment": "Synthetic sample: E to D",
+      "hardshipJuly2026": "A",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "Y",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-KEN-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
+      "sourceRows": {},
+      "latitude": -0.775,
+      "longitude": 36.375,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+    },
+    {
+      "id": "DEMO-KEN-04",
+      "country": "Kenya",
+      "name": "Kakuma",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "A",
       "securityRecommended": "A",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "A",
-      "nfdJuly2026": "N",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "B",
+      "nfdJuly2026": "Y",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-BRI-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-KEN-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 23.92,
-      "longitude": 45.07,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": -0.445,
+      "longitude": 36.785,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-BRI-05",
-      "country": "Brinovia (fictional)",
-      "name": "Lakecrest (sample)",
-      "dangerPayOct2026": "N",
+      "id": "DEMO-KEN-05",
+      "country": "Kenya",
+      "name": "Dadaab",
+      "dangerPayOct2026": "Y",
       "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "B",
       "securityRecommended": "C",
-      "securityComment": "Simulated recommendation B → C",
-      "hardshipJuly2026": "B",
+      "securityComment": "Synthetic sample: B to C",
+      "hardshipJuly2026": "C",
       "nfdJuly2026": "N",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-BRI-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-KEN-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 24.79,
-      "longitude": 46.2,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": -0.115,
+      "longitude": 37.195,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-CAS-01",
-      "country": "Caspiria (fictional)",
-      "name": "Merrow (sample)",
-      "dangerPayOct2026": "N",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "id": "DEMO-SOM-01",
+      "country": "Somalia",
+      "name": "Mogadishu (Mogadiscio)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "E",
       "securityRecommended": "E",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "D",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "E",
       "nfdJuly2026": "Y",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-CAS-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SOM-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -15.64,
-      "longitude": 64.62,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 4.09,
+      "longitude": 45.33,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-CAS-02",
-      "country": "Caspiria (fictional)",
-      "name": "Valeport (sample)",
+      "id": "DEMO-SOM-02",
+      "country": "Somalia",
+      "name": "Garowe",
       "dangerPayOct2026": "N",
       "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "A",
       "securityRecommended": "A",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "E",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "A",
       "nfdJuly2026": "N",
       "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-CAS-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SOM-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -14.77,
-      "longitude": 65.75,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 4.42,
+      "longitude": 45.74,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-CAS-03",
-      "country": "Caspiria (fictional)",
-      "name": "Ashford (sample)",
+      "id": "DEMO-SOM-03",
+      "country": "Somalia",
+      "name": "Hargeisa",
       "dangerPayOct2026": "Y",
       "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "B",
       "securityRecommended": "B",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "A",
-      "nfdJuly2026": "N",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "B",
+      "nfdJuly2026": "Y",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-CAS-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SOM-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -13.9,
-      "longitude": 66.88,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 4.75,
+      "longitude": 46.15,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-CAS-04",
-      "country": "Caspiria (fictional)",
-      "name": "Southcrest (sample)",
+      "id": "DEMO-SOM-04",
+      "country": "Somalia",
+      "name": "Kismayo (Kisimaio)",
       "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "C",
       "securityRecommended": "D",
-      "securityComment": "Simulated recommendation C → D",
-      "hardshipJuly2026": "B",
+      "securityComment": "Synthetic sample: C to D",
+      "hardshipJuly2026": "C",
       "nfdJuly2026": "N",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-CAS-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SOM-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -13.03,
-      "longitude": 68.01,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 5.08,
+      "longitude": 46.56,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-CAS-05",
-      "country": "Caspiria (fictional)",
-      "name": "Westhaven (sample)",
+      "id": "DEMO-SOM-05",
+      "country": "Somalia",
+      "name": "Galkacyo",
       "dangerPayOct2026": "N",
       "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "D",
       "securityRecommended": "C",
-      "securityComment": "Simulated recommendation D → C",
-      "hardshipJuly2026": "C",
+      "securityComment": "Synthetic sample: D to C",
+      "hardshipJuly2026": "D",
       "nfdJuly2026": "Y",
       "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-CAS-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-SOM-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -12.16,
-      "longitude": 69.14,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 5.41,
+      "longitude": 46.97,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-DEM-01",
-      "country": "Demeris (fictional)",
-      "name": "Cedarreach (sample)",
-      "dangerPayOct2026": "Y",
-      "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "id": "DEMO-DEU-01",
+      "country": "Germany",
+      "name": "Berlin",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "B",
       "securityRecommended": "A",
-      "securityComment": "Simulated recommendation B → A",
-      "hardshipJuly2026": "E",
-      "nfdJuly2026": "N",
-      "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-DEM-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
-      "sourceRows": {},
-      "latitude": -5.59,
-      "longitude": -41.44,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
-    },
-    {
-      "id": "DEMO-DEM-02",
-      "country": "Demeris (fictional)",
-      "name": "Solara (sample)",
-      "dangerPayOct2026": "N",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "C",
-      "securityRecommended": "C",
-      "securityComment": "No change (synthetic)",
+      "securityComment": "Synthetic sample: B to A",
       "hardshipJuly2026": "A",
       "nfdJuly2026": "N",
-      "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-DEM-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "nfdJan2027": "Y",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-DEU-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -4.72,
-      "longitude": -40.31,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 50.915,
+      "longitude": 10.305,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-DEM-03",
-      "country": "Demeris (fictional)",
-      "name": "Pinewatch (sample)",
-      "dangerPayOct2026": "N",
-      "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "D",
-      "securityRecommended": "E",
-      "securityComment": "Simulated recommendation D → E",
+      "id": "DEMO-DEU-02",
+      "country": "Germany",
+      "name": "Bonn",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "C",
+      "securityRecommended": "C",
+      "securityComment": "Synthetic sample: no change",
       "hardshipJuly2026": "B",
       "nfdJuly2026": "Y",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-DEM-1",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-DEU-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -3.85,
-      "longitude": -39.18,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 51.245,
+      "longitude": 10.715,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-DEM-04",
-      "country": "Demeris (fictional)",
-      "name": "Eastfall (sample)",
+      "id": "DEMO-DEU-03",
+      "country": "Germany",
+      "name": "Hamburg",
       "dangerPayOct2026": "Y",
       "dangerPayJuly2026": "N",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
-      "securityCurrent": "E",
-      "securityRecommended": "D",
-      "securityComment": "Simulated recommendation E → D",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "D",
+      "securityRecommended": "E",
+      "securityComment": "Synthetic sample: D to E",
       "hardshipJuly2026": "C",
       "nfdJuly2026": "N",
-      "nfdJan2027": "Y",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-DEM-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "nfdJan2027": "N",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-DEU-1",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -2.98,
-      "longitude": -38.05,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 51.575,
+      "longitude": 11.125,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     },
     {
-      "id": "DEMO-DEM-05",
-      "country": "Demeris (fictional)",
-      "name": "Vesper Bay (sample)",
-      "dangerPayOct2026": "Y",
+      "id": "DEMO-DEU-04",
+      "country": "Germany",
+      "name": "Dresden",
+      "dangerPayOct2026": "N",
       "dangerPayJuly2026": "Y",
-      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
+      "securityCurrent": "E",
+      "securityRecommended": "D",
+      "securityComment": "Synthetic sample: E to D",
+      "hardshipJuly2026": "D",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "Y",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-DEU-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
+      "sourceRows": {},
+      "latitude": 51.905,
+      "longitude": 11.535,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+    },
+    {
+      "id": "DEMO-DEU-05",
+      "country": "Germany",
+      "name": "Munich",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "SYNTHETIC EXAMPLE — not an official eligibility determination.",
       "securityCurrent": "A",
       "securityRecommended": "A",
-      "securityComment": "No change (synthetic)",
-      "hardshipJuly2026": "D",
+      "securityComment": "Synthetic sample: no change",
+      "hardshipJuly2026": "E",
       "nfdJuly2026": "N",
       "nfdJan2027": "N",
-      "familyComments": "Fictional non-family restriction status for demonstration.",
-      "srmAreaId": "DEMO-SRM-DEM-2",
-      "srmMappingStatus": "Mock area mapping · non-operational",
-      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "familyComments": "SYNTHETIC EXAMPLE — not an official family restriction.",
+      "srmAreaId": "DEMO-SRM-DEU-2",
+      "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
+      "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -2.11,
-      "longitude": -36.92,
-      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "latitude": 52.235,
+      "longitude": 11.945,
+      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
     }
   ],
   "srmAreas": [
     {
-      "id": "DEMO-SRM-ALD-1",
-      "country": "Alderra (fictional)",
-      "name": "Northern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-SSD-1",
+      "country": "South Sudan",
+      "name": "Demo SRM zone Alpha",
       "threats": [
         {
           "category": "Armed conflict",
@@ -598,13 +597,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "5-Very High",
           "projectedRisk": "5-Very High"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-ALD-2",
-      "country": "Alderra (fictional)",
-      "name": "Southern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-SSD-2",
+      "country": "South Sudan",
+      "name": "Demo SRM zone Beta",
       "threats": [
         {
           "category": "Armed conflict",
@@ -636,13 +635,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "2-Low",
           "projectedRisk": "2-Low"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-BRI-1",
-      "country": "Brinovia (fictional)",
-      "name": "Northern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-KEN-1",
+      "country": "Kenya",
+      "name": "Demo SRM zone Alpha",
       "threats": [
         {
           "category": "Armed conflict",
@@ -674,13 +673,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "1-Very Low",
           "projectedRisk": "2-Low"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-BRI-2",
-      "country": "Brinovia (fictional)",
-      "name": "Southern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-KEN-2",
+      "country": "Kenya",
+      "name": "Demo SRM zone Beta",
       "threats": [
         {
           "category": "Armed conflict",
@@ -712,13 +711,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "3-Medium",
           "projectedRisk": "4-High"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-CAS-1",
-      "country": "Caspiria (fictional)",
-      "name": "Northern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-SOM-1",
+      "country": "Somalia",
+      "name": "Demo SRM zone Alpha",
       "threats": [
         {
           "category": "Armed conflict",
@@ -750,13 +749,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "2-Low",
           "projectedRisk": "1-Very Low"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-CAS-2",
-      "country": "Caspiria (fictional)",
-      "name": "Southern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-SOM-2",
+      "country": "Somalia",
+      "name": "Demo SRM zone Beta",
       "threats": [
         {
           "category": "Armed conflict",
@@ -788,13 +787,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "4-High",
           "projectedRisk": "3-Medium"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-DEM-1",
-      "country": "Demeris (fictional)",
-      "name": "Northern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-DEU-1",
+      "country": "Germany",
+      "name": "Demo SRM zone Alpha",
       "threats": [
         {
           "category": "Armed conflict",
@@ -826,13 +825,13 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "3-Medium",
           "projectedRisk": "3-Medium"
         }
-      ]
+      ],
+      "sourceRows": []
     },
     {
-      "id": "DEMO-SRM-DEM-2",
-      "country": "Demeris (fictional)",
-      "name": "Southern Region (synthetic)",
-      "sourceRows": [],
+      "id": "DEMO-SRM-DEU-2",
+      "country": "Germany",
+      "name": "Demo SRM zone Beta",
       "threats": [
         {
           "category": "Armed conflict",
@@ -864,1304 +863,1305 @@ window.UNDSS_SEED_DATA =
           "presentRisk": "5-Very High",
           "projectedRisk": "5-Very High"
         }
-      ]
+      ],
+      "sourceRows": []
     }
   ],
   "incidents": [
     {
-      "id": "MOCK-ALD-1-1",
-      "country": "Alderra (fictional)",
+      "id": "SIM-SSD-JAN-1",
+      "country": "South Sudan",
       "month": "JAN",
-      "category": "Security incident",
+      "category": "Personal security incidents",
       "count": 1,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-1-2",
-      "country": "Alderra (fictional)",
+      "id": "SIM-SSD-JAN-2",
+      "country": "South Sudan",
       "month": "JAN",
-      "category": "Crime / theft",
+      "category": "Crime and theft",
       "count": 6,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-1-3",
-      "country": "Alderra (fictional)",
+      "id": "SIM-SSD-JAN-3",
+      "country": "South Sudan",
       "month": "JAN",
       "category": "Civil disturbance",
       "count": 11,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-1-4",
-      "country": "Alderra (fictional)",
+      "id": "SIM-SSD-JAN-4",
+      "country": "South Sudan",
       "month": "JAN",
-      "category": "Road movement disruption",
+      "category": "Road/movement events",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-FEB-1",
+      "country": "South Sudan",
+      "month": "FEB",
+      "category": "Crime and theft",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-FEB-2",
+      "country": "South Sudan",
+      "month": "FEB",
+      "category": "Civil disturbance",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-FEB-3",
+      "country": "South Sudan",
+      "month": "FEB",
+      "category": "Road/movement events",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-FEB-4",
+      "country": "South Sudan",
+      "month": "FEB",
+      "category": "Environmental hazards",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAR-1",
+      "country": "South Sudan",
+      "month": "MAR",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAR-2",
+      "country": "South Sudan",
+      "month": "MAR",
+      "category": "Road/movement events",
+      "count": 14,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAR-3",
+      "country": "South Sudan",
+      "month": "MAR",
+      "category": "Environmental hazards",
+      "count": 3,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAR-4",
+      "country": "South Sudan",
+      "month": "MAR",
+      "category": "Security threats",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-APR-1",
+      "country": "South Sudan",
+      "month": "APR",
+      "category": "Road/movement events",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-APR-2",
+      "country": "South Sudan",
+      "month": "APR",
+      "category": "Environmental hazards",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-APR-3",
+      "country": "South Sudan",
+      "month": "APR",
+      "category": "Security threats",
+      "count": 8,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-APR-4",
+      "country": "South Sudan",
+      "month": "APR",
+      "category": "Personal security incidents",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAY-1",
+      "country": "South Sudan",
+      "month": "MAY",
+      "category": "Environmental hazards",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAY-2",
+      "country": "South Sudan",
+      "month": "MAY",
+      "category": "Security threats",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAY-3",
+      "country": "South Sudan",
+      "month": "MAY",
+      "category": "Personal security incidents",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-MAY-4",
+      "country": "South Sudan",
+      "month": "MAY",
+      "category": "Crime and theft",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUN-1",
+      "country": "South Sudan",
+      "month": "JUN",
+      "category": "Security threats",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUN-2",
+      "country": "South Sudan",
+      "month": "JUN",
+      "category": "Personal security incidents",
+      "count": 8,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUN-3",
+      "country": "South Sudan",
+      "month": "JUN",
+      "category": "Crime and theft",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUN-4",
+      "country": "South Sudan",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUL-1",
+      "country": "South Sudan",
+      "month": "JUL",
+      "category": "Personal security incidents",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUL-2",
+      "country": "South Sudan",
+      "month": "JUL",
+      "category": "Crime and theft",
+      "count": 12,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUL-3",
+      "country": "South Sudan",
+      "month": "JUL",
+      "category": "Civil disturbance",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-JUL-4",
+      "country": "South Sudan",
+      "month": "JUL",
+      "category": "Road/movement events",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-AUG-1",
+      "country": "South Sudan",
+      "month": "AUG",
+      "category": "Crime and theft",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-AUG-2",
+      "country": "South Sudan",
+      "month": "AUG",
+      "category": "Civil disturbance",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-AUG-3",
+      "country": "South Sudan",
+      "month": "AUG",
+      "category": "Road/movement events",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-AUG-4",
+      "country": "South Sudan",
+      "month": "AUG",
+      "category": "Environmental hazards",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-SEP-1",
+      "country": "South Sudan",
+      "month": "SEP",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-SEP-2",
+      "country": "South Sudan",
+      "month": "SEP",
+      "category": "Road/movement events",
       "count": 2,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-2-1",
-      "country": "Alderra (fictional)",
-      "month": "FEB",
-      "category": "Crime / theft",
+      "id": "SIM-SSD-SEP-3",
+      "country": "South Sudan",
+      "month": "SEP",
+      "category": "Environmental hazards",
+      "count": 15,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SSD-SEP-4",
+      "country": "South Sudan",
+      "month": "SEP",
+      "category": "Security threats",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JAN-1",
+      "country": "Kenya",
+      "month": "JAN",
+      "category": "Crime and theft",
       "count": 8,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-2-2",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-JAN-2",
+      "country": "Kenya",
+      "month": "JAN",
+      "category": "Civil disturbance",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JAN-3",
+      "country": "Kenya",
+      "month": "JAN",
+      "category": "Road/movement events",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JAN-4",
+      "country": "Kenya",
+      "month": "JAN",
+      "category": "Environmental hazards",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-FEB-1",
+      "country": "Kenya",
       "month": "FEB",
       "category": "Civil disturbance",
+      "count": 11,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-FEB-2",
+      "country": "Kenya",
+      "month": "FEB",
+      "category": "Road/movement events",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-FEB-3",
+      "country": "Kenya",
+      "month": "FEB",
+      "category": "Environmental hazards",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-FEB-4",
+      "country": "Kenya",
+      "month": "FEB",
+      "category": "Security threats",
+      "count": 11,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-MAR-1",
+      "country": "Kenya",
+      "month": "MAR",
+      "category": "Road/movement events",
       "count": 14,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-2-3",
-      "country": "Alderra (fictional)",
-      "month": "FEB",
-      "category": "Road movement disruption",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-2-4",
-      "country": "Alderra (fictional)",
-      "month": "FEB",
-      "category": "Environmental hazard",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-3-1",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-MAR-2",
+      "country": "Kenya",
       "month": "MAR",
-      "category": "Civil disturbance",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
+      "category": "Environmental hazards",
+      "count": 3,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-3-2",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-MAR-3",
+      "country": "Kenya",
       "month": "MAR",
-      "category": "Road movement disruption",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
+      "category": "Security threats",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-3-3",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-MAR-4",
+      "country": "Kenya",
       "month": "MAR",
-      "category": "Environmental hazard",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
+      "category": "Personal security incidents",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-3-4",
-      "country": "Alderra (fictional)",
-      "month": "MAR",
-      "category": "Threats to personnel",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-4-1",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-APR-1",
+      "country": "Kenya",
       "month": "APR",
-      "category": "Road movement disruption",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
+      "category": "Environmental hazards",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-4-2",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-APR-2",
+      "country": "Kenya",
       "month": "APR",
-      "category": "Environmental hazard",
+      "category": "Security threats",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-APR-3",
+      "country": "Kenya",
+      "month": "APR",
+      "category": "Personal security incidents",
+      "count": 15,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-APR-4",
+      "country": "Kenya",
+      "month": "APR",
+      "category": "Crime and theft",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-MAY-1",
+      "country": "Kenya",
+      "month": "MAY",
+      "category": "Security threats",
       "count": 2,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-4-3",
-      "country": "Alderra (fictional)",
-      "month": "APR",
-      "category": "Threats to personnel",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-4-4",
-      "country": "Alderra (fictional)",
-      "month": "APR",
-      "category": "Security incident",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-5-1",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-MAY-2",
+      "country": "Kenya",
       "month": "MAY",
-      "category": "Environmental hazard",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
+      "category": "Personal security incidents",
+      "count": 11,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-5-2",
-      "country": "Alderra (fictional)",
+      "id": "SIM-KEN-MAY-3",
+      "country": "Kenya",
       "month": "MAY",
-      "category": "Threats to personnel",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-5-3",
-      "country": "Alderra (fictional)",
-      "month": "MAY",
-      "category": "Security incident",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-5-4",
-      "country": "Alderra (fictional)",
-      "month": "MAY",
-      "category": "Crime / theft",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-6-1",
-      "country": "Alderra (fictional)",
-      "month": "JUN",
-      "category": "Threats to personnel",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-6-2",
-      "country": "Alderra (fictional)",
-      "month": "JUN",
-      "category": "Security incident",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-6-3",
-      "country": "Alderra (fictional)",
-      "month": "JUN",
-      "category": "Crime / theft",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-6-4",
-      "country": "Alderra (fictional)",
-      "month": "JUN",
-      "category": "Civil disturbance",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-7-1",
-      "country": "Alderra (fictional)",
-      "month": "JUL",
-      "category": "Security incident",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-7-2",
-      "country": "Alderra (fictional)",
-      "month": "JUL",
-      "category": "Crime / theft",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-7-3",
-      "country": "Alderra (fictional)",
-      "month": "JUL",
-      "category": "Civil disturbance",
-      "count": 9,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-7-4",
-      "country": "Alderra (fictional)",
-      "month": "JUL",
-      "category": "Road movement disruption",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-8-1",
-      "country": "Alderra (fictional)",
-      "month": "AUG",
-      "category": "Crime / theft",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-8-2",
-      "country": "Alderra (fictional)",
-      "month": "AUG",
-      "category": "Civil disturbance",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-8-3",
-      "country": "Alderra (fictional)",
-      "month": "AUG",
-      "category": "Road movement disruption",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-8-4",
-      "country": "Alderra (fictional)",
-      "month": "AUG",
-      "category": "Environmental hazard",
+      "category": "Crime and theft",
       "count": 2,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-ALD-9-1",
-      "country": "Alderra (fictional)",
-      "month": "SEP",
-      "category": "Civil disturbance",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-9-2",
-      "country": "Alderra (fictional)",
-      "month": "SEP",
-      "category": "Road movement disruption",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-9-3",
-      "country": "Alderra (fictional)",
-      "month": "SEP",
-      "category": "Environmental hazard",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-ALD-9-4",
-      "country": "Alderra (fictional)",
-      "month": "SEP",
-      "category": "Threats to personnel",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-1-1",
-      "country": "Brinovia (fictional)",
-      "month": "JAN",
-      "category": "Crime / theft",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-1-2",
-      "country": "Brinovia (fictional)",
-      "month": "JAN",
-      "category": "Civil disturbance",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-1-3",
-      "country": "Brinovia (fictional)",
-      "month": "JAN",
-      "category": "Road movement disruption",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-1-4",
-      "country": "Brinovia (fictional)",
-      "month": "JAN",
-      "category": "Environmental hazard",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-2-1",
-      "country": "Brinovia (fictional)",
-      "month": "FEB",
-      "category": "Civil disturbance",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-2-2",
-      "country": "Brinovia (fictional)",
-      "month": "FEB",
-      "category": "Road movement disruption",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-2-3",
-      "country": "Brinovia (fictional)",
-      "month": "FEB",
-      "category": "Environmental hazard",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-2-4",
-      "country": "Brinovia (fictional)",
-      "month": "FEB",
-      "category": "Threats to personnel",
-      "count": 11,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-3-1",
-      "country": "Brinovia (fictional)",
-      "month": "MAR",
-      "category": "Road movement disruption",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-3-2",
-      "country": "Brinovia (fictional)",
-      "month": "MAR",
-      "category": "Environmental hazard",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-3-3",
-      "country": "Brinovia (fictional)",
-      "month": "MAR",
-      "category": "Threats to personnel",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-3-4",
-      "country": "Brinovia (fictional)",
-      "month": "MAR",
-      "category": "Security incident",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-4-1",
-      "country": "Brinovia (fictional)",
-      "month": "APR",
-      "category": "Environmental hazard",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-4-2",
-      "country": "Brinovia (fictional)",
-      "month": "APR",
-      "category": "Threats to personnel",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-4-3",
-      "country": "Brinovia (fictional)",
-      "month": "APR",
-      "category": "Security incident",
-      "count": 9,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-4-4",
-      "country": "Brinovia (fictional)",
-      "month": "APR",
-      "category": "Crime / theft",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-5-1",
-      "country": "Brinovia (fictional)",
+      "id": "SIM-KEN-MAY-4",
+      "country": "Kenya",
       "month": "MAY",
-      "category": "Threats to personnel",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-5-2",
-      "country": "Brinovia (fictional)",
-      "month": "MAY",
-      "category": "Security incident",
-      "count": 9,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-5-3",
-      "country": "Brinovia (fictional)",
-      "month": "MAY",
-      "category": "Crime / theft",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-5-4",
-      "country": "Brinovia (fictional)",
-      "month": "MAY",
-      "category": "Civil disturbance",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-6-1",
-      "country": "Brinovia (fictional)",
-      "month": "JUN",
-      "category": "Security incident",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-6-2",
-      "country": "Brinovia (fictional)",
-      "month": "JUN",
-      "category": "Crime / theft",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-6-3",
-      "country": "Brinovia (fictional)",
-      "month": "JUN",
-      "category": "Civil disturbance",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-6-4",
-      "country": "Brinovia (fictional)",
-      "month": "JUN",
-      "category": "Road movement disruption",
-      "count": 9,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-7-1",
-      "country": "Brinovia (fictional)",
-      "month": "JUL",
-      "category": "Crime / theft",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-7-2",
-      "country": "Brinovia (fictional)",
-      "month": "JUL",
       "category": "Civil disturbance",
       "count": 11,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-BRI-7-3",
-      "country": "Brinovia (fictional)",
+      "id": "SIM-KEN-JUN-1",
+      "country": "Kenya",
+      "month": "JUN",
+      "category": "Personal security incidents",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JUN-2",
+      "country": "Kenya",
+      "month": "JUN",
+      "category": "Crime and theft",
+      "count": 15,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JUN-3",
+      "country": "Kenya",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JUN-4",
+      "country": "Kenya",
+      "month": "JUN",
+      "category": "Road/movement events",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-JUL-1",
+      "country": "Kenya",
       "month": "JUL",
-      "category": "Road movement disruption",
+      "category": "Crime and theft",
       "count": 8,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-BRI-7-4",
-      "country": "Brinovia (fictional)",
+      "id": "SIM-KEN-JUL-2",
+      "country": "Kenya",
       "month": "JUL",
-      "category": "Environmental hazard",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-8-1",
-      "country": "Brinovia (fictional)",
-      "month": "AUG",
       "category": "Civil disturbance",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-8-2",
-      "country": "Brinovia (fictional)",
-      "month": "AUG",
-      "category": "Road movement disruption",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-8-3",
-      "country": "Brinovia (fictional)",
-      "month": "AUG",
-      "category": "Environmental hazard",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-8-4",
-      "country": "Brinovia (fictional)",
-      "month": "AUG",
-      "category": "Threats to personnel",
       "count": 1,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-BRI-9-1",
-      "country": "Brinovia (fictional)",
-      "month": "SEP",
-      "category": "Road movement disruption",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-9-2",
-      "country": "Brinovia (fictional)",
-      "month": "SEP",
-      "category": "Environmental hazard",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-BRI-9-3",
-      "country": "Brinovia (fictional)",
-      "month": "SEP",
-      "category": "Threats to personnel",
+      "id": "SIM-KEN-JUL-3",
+      "country": "Kenya",
+      "month": "JUL",
+      "category": "Road/movement events",
       "count": 12,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-BRI-9-4",
-      "country": "Brinovia (fictional)",
-      "month": "SEP",
-      "category": "Security incident",
+      "id": "SIM-KEN-JUL-4",
+      "country": "Kenya",
+      "month": "JUL",
+      "category": "Environmental hazards",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-AUG-1",
+      "country": "Kenya",
+      "month": "AUG",
+      "category": "Civil disturbance",
       "count": 11,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-1-1",
-      "country": "Caspiria (fictional)",
-      "month": "JAN",
-      "category": "Civil disturbance",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-KEN-AUG-2",
+      "country": "Kenya",
+      "month": "AUG",
+      "category": "Road/movement events",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-1-2",
-      "country": "Caspiria (fictional)",
-      "month": "JAN",
-      "category": "Road movement disruption",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-KEN-AUG-3",
+      "country": "Kenya",
+      "month": "AUG",
+      "category": "Environmental hazards",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-1-3",
-      "country": "Caspiria (fictional)",
-      "month": "JAN",
-      "category": "Environmental hazard",
+      "id": "SIM-KEN-AUG-4",
+      "country": "Kenya",
+      "month": "AUG",
+      "category": "Security threats",
+      "count": 11,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-SEP-1",
+      "country": "Kenya",
+      "month": "SEP",
+      "category": "Road/movement events",
+      "count": 14,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-KEN-SEP-2",
+      "country": "Kenya",
+      "month": "SEP",
+      "category": "Environmental hazards",
       "count": 9,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-1-4",
-      "country": "Caspiria (fictional)",
-      "month": "JAN",
-      "category": "Threats to personnel",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-2-1",
-      "country": "Caspiria (fictional)",
-      "month": "FEB",
-      "category": "Road movement disruption",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-2-2",
-      "country": "Caspiria (fictional)",
-      "month": "FEB",
-      "category": "Environmental hazard",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-2-3",
-      "country": "Caspiria (fictional)",
-      "month": "FEB",
-      "category": "Threats to personnel",
+      "id": "SIM-KEN-SEP-3",
+      "country": "Kenya",
+      "month": "SEP",
+      "category": "Security threats",
       "count": 4,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-2-4",
-      "country": "Caspiria (fictional)",
-      "month": "FEB",
-      "category": "Security incident",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-KEN-SEP-4",
+      "country": "Kenya",
+      "month": "SEP",
+      "category": "Personal security incidents",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-3-1",
-      "country": "Caspiria (fictional)",
-      "month": "MAR",
-      "category": "Environmental hazard",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-3-2",
-      "country": "Caspiria (fictional)",
-      "month": "MAR",
-      "category": "Threats to personnel",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-3-3",
-      "country": "Caspiria (fictional)",
-      "month": "MAR",
-      "category": "Security incident",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-3-4",
-      "country": "Caspiria (fictional)",
-      "month": "MAR",
-      "category": "Crime / theft",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-4-1",
-      "country": "Caspiria (fictional)",
-      "month": "APR",
-      "category": "Threats to personnel",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-4-2",
-      "country": "Caspiria (fictional)",
-      "month": "APR",
-      "category": "Security incident",
-      "count": 14,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-4-3",
-      "country": "Caspiria (fictional)",
-      "month": "APR",
-      "category": "Crime / theft",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-4-4",
-      "country": "Caspiria (fictional)",
-      "month": "APR",
+      "id": "SIM-SOM-JAN-1",
+      "country": "Somalia",
+      "month": "JAN",
       "category": "Civil disturbance",
+      "count": 15,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-JAN-2",
+      "country": "Somalia",
+      "month": "JAN",
+      "category": "Road/movement events",
       "count": 2,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-5-1",
-      "country": "Caspiria (fictional)",
-      "month": "MAY",
-      "category": "Security incident",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-5-2",
-      "country": "Caspiria (fictional)",
-      "month": "MAY",
-      "category": "Crime / theft",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-5-3",
-      "country": "Caspiria (fictional)",
-      "month": "MAY",
-      "category": "Civil disturbance",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-5-4",
-      "country": "Caspiria (fictional)",
-      "month": "MAY",
-      "category": "Road movement disruption",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-6-1",
-      "country": "Caspiria (fictional)",
-      "month": "JUN",
-      "category": "Crime / theft",
-      "count": 6,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-6-2",
-      "country": "Caspiria (fictional)",
-      "month": "JUN",
-      "category": "Civil disturbance",
-      "count": 2,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-6-3",
-      "country": "Caspiria (fictional)",
-      "month": "JUN",
-      "category": "Road movement disruption",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-6-4",
-      "country": "Caspiria (fictional)",
-      "month": "JUN",
-      "category": "Environmental hazard",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-7-1",
-      "country": "Caspiria (fictional)",
-      "month": "JUL",
-      "category": "Civil disturbance",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-7-2",
-      "country": "Caspiria (fictional)",
-      "month": "JUL",
-      "category": "Road movement disruption",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-7-3",
-      "country": "Caspiria (fictional)",
-      "month": "JUL",
-      "category": "Environmental hazard",
+      "id": "SIM-SOM-JAN-3",
+      "country": "Somalia",
+      "month": "JAN",
+      "category": "Environmental hazards",
       "count": 7,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-7-4",
-      "country": "Caspiria (fictional)",
-      "month": "JUL",
-      "category": "Threats to personnel",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-SOM-JAN-4",
+      "country": "Somalia",
+      "month": "JAN",
+      "category": "Security threats",
+      "count": 12,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-8-1",
-      "country": "Caspiria (fictional)",
-      "month": "AUG",
-      "category": "Road movement disruption",
+      "id": "SIM-SOM-FEB-1",
+      "country": "Somalia",
+      "month": "FEB",
+      "category": "Road/movement events",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-FEB-2",
+      "country": "Somalia",
+      "month": "FEB",
+      "category": "Environmental hazards",
       "count": 6,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-8-2",
-      "country": "Caspiria (fictional)",
-      "month": "AUG",
-      "category": "Environmental hazard",
-      "count": 4,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-SOM-FEB-3",
+      "country": "Somalia",
+      "month": "FEB",
+      "category": "Security threats",
+      "count": 12,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-8-3",
-      "country": "Caspiria (fictional)",
-      "month": "AUG",
-      "category": "Threats to personnel",
-      "count": 2,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-SOM-FEB-4",
+      "country": "Somalia",
+      "month": "FEB",
+      "category": "Personal security incidents",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-8-4",
-      "country": "Caspiria (fictional)",
-      "month": "AUG",
-      "category": "Security incident",
+      "id": "SIM-SOM-MAR-1",
+      "country": "Somalia",
+      "month": "MAR",
+      "category": "Environmental hazards",
+      "count": 3,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-MAR-2",
+      "country": "Somalia",
+      "month": "MAR",
+      "category": "Security threats",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-MAR-3",
+      "country": "Somalia",
+      "month": "MAR",
+      "category": "Personal security incidents",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-MAR-4",
+      "country": "Somalia",
+      "month": "MAR",
+      "category": "Crime and theft",
+      "count": 6,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-APR-1",
+      "country": "Somalia",
+      "month": "APR",
+      "category": "Security threats",
+      "count": 6,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-APR-2",
+      "country": "Somalia",
+      "month": "APR",
+      "category": "Personal security incidents",
       "count": 14,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-9-1",
-      "country": "Caspiria (fictional)",
-      "month": "SEP",
-      "category": "Environmental hazard",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-SOM-APR-3",
+      "country": "Somalia",
+      "month": "APR",
+      "category": "Crime and theft",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-9-2",
-      "country": "Caspiria (fictional)",
-      "month": "SEP",
-      "category": "Threats to personnel",
+      "id": "SIM-SOM-APR-4",
+      "country": "Somalia",
+      "month": "APR",
+      "category": "Civil disturbance",
       "count": 12,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-CAS-9-3",
-      "country": "Caspiria (fictional)",
-      "month": "SEP",
-      "category": "Security incident",
-      "count": 11,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-CAS-9-4",
-      "country": "Caspiria (fictional)",
-      "month": "SEP",
-      "category": "Crime / theft",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-1-1",
-      "country": "Demeris (fictional)",
-      "month": "JAN",
-      "category": "Road movement disruption",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-1-2",
-      "country": "Demeris (fictional)",
-      "month": "JAN",
-      "category": "Environmental hazard",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-1-3",
-      "country": "Demeris (fictional)",
-      "month": "JAN",
-      "category": "Threats to personnel",
-      "count": 8,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-1-4",
-      "country": "Demeris (fictional)",
-      "month": "JAN",
-      "category": "Security incident",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-2-1",
-      "country": "Demeris (fictional)",
-      "month": "FEB",
-      "category": "Environmental hazard",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-2-2",
-      "country": "Demeris (fictional)",
-      "month": "FEB",
-      "category": "Threats to personnel",
-      "count": 11,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-2-3",
-      "country": "Demeris (fictional)",
-      "month": "FEB",
-      "category": "Security incident",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-2-4",
-      "country": "Demeris (fictional)",
-      "month": "FEB",
-      "category": "Crime / theft",
+      "id": "SIM-SOM-MAY-1",
+      "country": "Somalia",
+      "month": "MAY",
+      "category": "Personal security incidents",
       "count": 9,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-3-1",
-      "country": "Demeris (fictional)",
-      "month": "MAR",
-      "category": "Threats to personnel",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-3-2",
-      "country": "Demeris (fictional)",
-      "month": "MAR",
-      "category": "Security incident",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-3-3",
-      "country": "Demeris (fictional)",
-      "month": "MAR",
-      "category": "Crime / theft",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-3-4",
-      "country": "Demeris (fictional)",
-      "month": "MAR",
-      "category": "Civil disturbance",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-4-1",
-      "country": "Demeris (fictional)",
-      "month": "APR",
-      "category": "Security incident",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-4-2",
-      "country": "Demeris (fictional)",
-      "month": "APR",
-      "category": "Crime / theft",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-4-3",
-      "country": "Demeris (fictional)",
-      "month": "APR",
-      "category": "Civil disturbance",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-4-4",
-      "country": "Demeris (fictional)",
-      "month": "APR",
-      "category": "Road movement disruption",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-5-1",
-      "country": "Demeris (fictional)",
+      "id": "SIM-SOM-MAY-2",
+      "country": "Somalia",
       "month": "MAY",
-      "category": "Crime / theft",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
+      "category": "Crime and theft",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-5-2",
-      "country": "Demeris (fictional)",
+      "id": "SIM-SOM-MAY-3",
+      "country": "Somalia",
       "month": "MAY",
       "category": "Civil disturbance",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-5-3",
-      "country": "Demeris (fictional)",
-      "month": "MAY",
-      "category": "Road movement disruption",
-      "count": 2,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-5-4",
-      "country": "Demeris (fictional)",
-      "month": "MAY",
-      "category": "Environmental hazard",
-      "count": 11,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-6-1",
-      "country": "Demeris (fictional)",
-      "month": "JUN",
-      "category": "Civil disturbance",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-6-2",
-      "country": "Demeris (fictional)",
-      "month": "JUN",
-      "category": "Road movement disruption",
-      "count": 1,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-6-3",
-      "country": "Demeris (fictional)",
-      "month": "JUN",
-      "category": "Environmental hazard",
-      "count": 11,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-6-4",
-      "country": "Demeris (fictional)",
-      "month": "JUN",
-      "category": "Threats to personnel",
-      "count": 7,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-7-1",
-      "country": "Demeris (fictional)",
-      "month": "JUL",
-      "category": "Road movement disruption",
-      "count": 12,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-7-2",
-      "country": "Demeris (fictional)",
-      "month": "JUL",
-      "category": "Environmental hazard",
       "count": 9,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-7-3",
-      "country": "Demeris (fictional)",
-      "month": "JUL",
-      "category": "Threats to personnel",
+      "id": "SIM-SOM-MAY-4",
+      "country": "Somalia",
+      "month": "MAY",
+      "category": "Road/movement events",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-JUN-1",
+      "country": "Somalia",
+      "month": "JUN",
+      "category": "Crime and theft",
+      "count": 12,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-JUN-2",
+      "country": "Somalia",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-JUN-3",
+      "country": "Somalia",
+      "month": "JUN",
+      "category": "Road/movement events",
+      "count": 14,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-JUN-4",
+      "country": "Somalia",
+      "month": "JUN",
+      "category": "Environmental hazards",
       "count": 6,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-7-4",
-      "country": "Demeris (fictional)",
+      "id": "SIM-SOM-JUL-1",
+      "country": "Somalia",
       "month": "JUL",
-      "category": "Security incident",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
+      "category": "Civil disturbance",
+      "count": 15,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-8-1",
-      "country": "Demeris (fictional)",
-      "month": "AUG",
-      "category": "Environmental hazard",
-      "count": 5,
-      "details": "Simulated report count for design testing.",
+      "id": "SIM-SOM-JUL-2",
+      "country": "Somalia",
+      "month": "JUL",
+      "category": "Road/movement events",
+      "count": 8,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-8-2",
-      "country": "Demeris (fictional)",
-      "month": "AUG",
-      "category": "Threats to personnel",
-      "count": 3,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-8-3",
-      "country": "Demeris (fictional)",
-      "month": "AUG",
-      "category": "Security incident",
+      "id": "SIM-SOM-JUL-3",
+      "country": "Somalia",
+      "month": "JUL",
+      "category": "Environmental hazards",
       "count": 1,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-8-4",
-      "country": "Demeris (fictional)",
-      "month": "AUG",
-      "category": "Crime / theft",
-      "count": 13,
-      "details": "Simulated report count for design testing.",
-      "sourceRow": null
-    },
-    {
-      "id": "MOCK-DEM-9-1",
-      "country": "Demeris (fictional)",
-      "month": "SEP",
-      "category": "Threats to personnel",
+      "id": "SIM-SOM-JUL-4",
+      "country": "Somalia",
+      "month": "JUL",
+      "category": "Security threats",
       "count": 12,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-9-2",
-      "country": "Demeris (fictional)",
+      "id": "SIM-SOM-AUG-1",
+      "country": "Somalia",
+      "month": "AUG",
+      "category": "Road/movement events",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-AUG-2",
+      "country": "Somalia",
+      "month": "AUG",
+      "category": "Environmental hazards",
+      "count": 12,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-AUG-3",
+      "country": "Somalia",
+      "month": "AUG",
+      "category": "Security threats",
+      "count": 6,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-AUG-4",
+      "country": "Somalia",
+      "month": "AUG",
+      "category": "Personal security incidents",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-SEP-1",
+      "country": "Somalia",
       "month": "SEP",
-      "category": "Security incident",
+      "category": "Environmental hazards",
+      "count": 3,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-SEP-2",
+      "country": "Somalia",
+      "month": "SEP",
+      "category": "Security threats",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-SOM-SEP-3",
+      "country": "Somalia",
+      "month": "SEP",
+      "category": "Personal security incidents",
       "count": 11,
-      "details": "Simulated report count for design testing.",
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-9-3",
-      "country": "Demeris (fictional)",
+      "id": "SIM-SOM-SEP-4",
+      "country": "Somalia",
       "month": "SEP",
-      "category": "Crime / theft",
-      "count": 10,
-      "details": "Simulated report count for design testing.",
+      "category": "Crime and theft",
+      "count": 6,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     },
     {
-      "id": "MOCK-DEM-9-4",
-      "country": "Demeris (fictional)",
+      "id": "SIM-DEU-JAN-1",
+      "country": "Germany",
+      "month": "JAN",
+      "category": "Road/movement events",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JAN-2",
+      "country": "Germany",
+      "month": "JAN",
+      "category": "Environmental hazards",
+      "count": 9,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JAN-3",
+      "country": "Germany",
+      "month": "JAN",
+      "category": "Security threats",
+      "count": 14,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JAN-4",
+      "country": "Germany",
+      "month": "JAN",
+      "category": "Personal security incidents",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-FEB-1",
+      "country": "Germany",
+      "month": "FEB",
+      "category": "Environmental hazards",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-FEB-2",
+      "country": "Germany",
+      "month": "FEB",
+      "category": "Security threats",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-FEB-3",
+      "country": "Germany",
+      "month": "FEB",
+      "category": "Personal security incidents",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-FEB-4",
+      "country": "Germany",
+      "month": "FEB",
+      "category": "Crime and theft",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAR-1",
+      "country": "Germany",
+      "month": "MAR",
+      "category": "Security threats",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAR-2",
+      "country": "Germany",
+      "month": "MAR",
+      "category": "Personal security incidents",
+      "count": 17,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAR-3",
+      "country": "Germany",
+      "month": "MAR",
+      "category": "Crime and theft",
+      "count": 6,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAR-4",
+      "country": "Germany",
+      "month": "MAR",
+      "category": "Civil disturbance",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-APR-1",
+      "country": "Germany",
+      "month": "APR",
+      "category": "Personal security incidents",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-APR-2",
+      "country": "Germany",
+      "month": "APR",
+      "category": "Crime and theft",
+      "count": 3,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-APR-3",
+      "country": "Germany",
+      "month": "APR",
+      "category": "Civil disturbance",
+      "count": 11,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-APR-4",
+      "country": "Germany",
+      "month": "APR",
+      "category": "Road/movement events",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAY-1",
+      "country": "Germany",
+      "month": "MAY",
+      "category": "Crime and theft",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAY-2",
+      "country": "Germany",
+      "month": "MAY",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAY-3",
+      "country": "Germany",
+      "month": "MAY",
+      "category": "Road/movement events",
+      "count": 16,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-MAY-4",
+      "country": "Germany",
+      "month": "MAY",
+      "category": "Environmental hazards",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUN-1",
+      "country": "Germany",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUN-2",
+      "country": "Germany",
+      "month": "JUN",
+      "category": "Road/movement events",
+      "count": 11,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUN-3",
+      "country": "Germany",
+      "month": "JUN",
+      "category": "Environmental hazards",
+      "count": 3,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUN-4",
+      "country": "Germany",
+      "month": "JUN",
+      "category": "Security threats",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUL-1",
+      "country": "Germany",
+      "month": "JUL",
+      "category": "Road/movement events",
+      "count": 4,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUL-2",
+      "country": "Germany",
+      "month": "JUL",
+      "category": "Environmental hazards",
+      "count": 15,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUL-3",
+      "country": "Germany",
+      "month": "JUL",
+      "category": "Security threats",
+      "count": 8,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-JUL-4",
+      "country": "Germany",
+      "month": "JUL",
+      "category": "Personal security incidents",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-AUG-1",
+      "country": "Germany",
+      "month": "AUG",
+      "category": "Environmental hazards",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-AUG-2",
+      "country": "Germany",
+      "month": "AUG",
+      "category": "Security threats",
+      "count": 1,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-AUG-3",
+      "country": "Germany",
+      "month": "AUG",
+      "category": "Personal security incidents",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-AUG-4",
+      "country": "Germany",
+      "month": "AUG",
+      "category": "Crime and theft",
+      "count": 7,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-SEP-1",
+      "country": "Germany",
+      "month": "SEP",
+      "category": "Security threats",
+      "count": 10,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-SEP-2",
+      "country": "Germany",
+      "month": "SEP",
+      "category": "Personal security incidents",
+      "count": 5,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-SEP-3",
+      "country": "Germany",
+      "month": "SEP",
+      "category": "Crime and theft",
+      "count": 18,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
+      "sourceRow": null
+    },
+    {
+      "id": "SIM-DEU-SEP-4",
+      "country": "Germany",
       "month": "SEP",
       "category": "Civil disturbance",
-      "count": 9,
-      "details": "Simulated report count for design testing.",
+      "count": 13,
+      "details": "Fabricated SSIRS-like monthly count. No source incident is represented.",
       "sourceRow": null
     }
   ]
@@ -2172,10 +2172,10 @@ window.UNDSS_SEED_DATA =
   /* UNDSS Duty Station Intelligence — local-first pilot. No network requests. */
   (function(){
   'use strict';
-  const KEY='undss-public-sample-demo-v2';
+  const KEY='undss-public-demo-realnames-fakedata-v3';
   const MONTHS=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
   let db;
-  let country='Alderra (fictional)', stationId='DEMO-ALD-01', editStationId='DEMO-ALD-01', editSrmId='DEMO-SRM-ALD-1', incidentCountry='Alderra (fictional)';
+  let country='South Sudan', stationId='DEMO-SSD-01', editStationId='DEMO-SSD-01', editSrmId='DEMO-SRM-SSD-1', incidentCountry='South Sudan';
   let activePage='overview', activeSettingsTab='stations',toastTimer=null;
   const $=(id)=>document.getElementById(id);
   const text=(id,v)=>{$(id).textContent=String(v??'—')};
@@ -2313,7 +2313,7 @@ window.UNDSS_SEED_DATA =
       area.id=id;area.name=name;area.country=c;area.threats=[...$('srmEditThreats').children].map(tr=>({category:tr.querySelector('.threat-category').value.trim(),threatLevel:tr.querySelector('.threat-level').value.trim(),presentRisk:tr.querySelector('.threat-present').value.trim(),projectedRisk:tr.querySelector('.threat-projected').value.trim()})).filter(x=>x.category);
       if(id!==editSrmId){db.stations.forEach(s=>{if(s.srmAreaId===editSrmId)s.srmAreaId=id;});}editSrmId=id;save();renderSrmEditorSelect();fillSrmEditor();toast('SRM assessment saved.');}
   function addSrm(){const id=window.prompt('New SRM area ID (must be unique):');if(!id)return;const rid=id.trim();if(!rid)return;if(db.srmAreas.some(x=>x.id===rid))return toast('That SRM ID already exists.');
-      db.srmAreas.push({id:rid,country:country||'Alderra (fictional)',name:'New SRM area',threats:[],sourceRows:[]});editSrmId=rid;save();renderSrmEditorSelect();fillSrmEditor();toast('New SRM area created. Update its name and add threats.');}
+      db.srmAreas.push({id:rid,country:country||'South Sudan',name:'New SRM area',threats:[],sourceRows:[]});editSrmId=rid;save();renderSrmEditorSelect();fillSrmEditor();toast('New SRM area created. Update its name and add threats.');}
   function renderEventCountryOptions(){const cs=[...new Set([...countries(),...db.incidents.map(x=>x.country)])].filter(Boolean).sort();if(!cs.includes(incidentCountry))incidentCountry=cs[0]||'';setOptions($('eventCountrySelect'),cs.map(c=>({value:c,label:c})),incidentCountry);}
   function appendEventRow(t){const tr=document.createElement('tr');tr.dataset.id=t.id||'';tr.dataset.sourceRow=t.sourceRow||'';
       tr.innerHTML=`<td><select class="event-month" aria-label="Month">${MONTHS.map(m=>`<option ${m===t.month?'selected':''}>${m}</option>`).join('')}</select></td><td><input class="wide-input event-category" aria-label="Incident category" value="${h(t.category||'')}"></td><td><input class="event-count" type="number" min="0" aria-label="Incident count" value="${Number(t.count)||0}"></td><td><input class="wide-input event-details" aria-label="Incident details" value="${h(t.details||'')}"></td><td><button type="button" class="remove-row" aria-label="Delete incident record">×</button></td>`;
@@ -2344,7 +2344,7 @@ window.UNDSS_SEED_DATA =
   async function importData(e){const file=e.target.files?.[0];if(!file)return;try{const raw=await file.text();const d=JSON.parse(raw);if(!validDataset(d))throw new Error('Missing duty stations, SRM areas, incidents, or metadata.');if(!window.confirm('Replace the current browser dataset with this JSON file? Export a backup first if needed.'))return;
           db=d;stationId=db.stations[0]?.id||'';country=db.stations[0]?.country||'';editStationId=stationId;editSrmId=db.srmAreas[0]?.id||'';incidentCountry=country;save();renderSettings();renderSelectors();renderOverview();toast('JSON dataset imported.');}
       catch(err){toast('Import failed: '+String(err.message||err).slice(0,100))}finally{e.target.value='';}}
-  function resetData(){if(!window.confirm('Restore the populated synthetic demo dataset? This clears every local edit. Export a backup first if needed.'))return;db=clone(window.UNDSS_SEED_DATA);stationId='DEMO-ALD-01';country='Alderra (fictional)';editStationId='DEMO-ALD-01';editSrmId='DEMO-SRM-ALD-1';incidentCountry='Alderra (fictional)';try{localStorage.removeItem(KEY)}catch(e){}text('saveStatus','Original fully populated fictional dataset');renderSettings();renderSelectors();renderOverview();toast('Original pilot restored.');}
+  function resetData(){if(!window.confirm('Restore the populated synthetic demo dataset? This clears every local edit. Export a backup first if needed.'))return;db=clone(window.UNDSS_SEED_DATA);stationId='DEMO-SSD-01';country='South Sudan';editStationId='DEMO-SSD-01';editSrmId='DEMO-SRM-SSD-1';incidentCountry='South Sudan';try{localStorage.removeItem(KEY)}catch(e){}text('saveStatus','Original fully populated fictional dataset');renderSettings();renderSelectors();renderOverview();toast('Original pilot restored.');}
   function wire(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>setPage(b.dataset.page)));
       document.querySelectorAll('[data-settingstab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.settingstab)));
       $('countrySelect').addEventListener('change',e=>{country=e.target.value;stationId=stationsIn(country)[0]?.id||'';$('stationSearch').value='';renderSelectors();renderOverview();});
@@ -2378,12 +2378,12 @@ window.UNDSS_SEED_DATA =
   <style>.demo-watermark{padding:12px;background:#fff2c5;color:#684300;text-align:center;font-weight:700;font-size:13px;border-bottom:2px solid #cc9b00}</style>
   </head>
   <body>
-  <div class="demo-watermark">PUBLIC DESIGN PREVIEW — FICTIONAL COUNTRY & VALUES — NOT AN OFFICIAL UN SITE</div>
+  <div class="demo-watermark">PUBLIC DEMO — REAL PLACE NAMES · ALL IDs, RATINGS, COUNTS, SRM, SSIRS AND COORDINATES ARE FAKE — NOT OFFICIAL</div>
   <div class="shell">
     <aside class="sidebar" aria-label="Application navigation">
       <div class="brand">
         <div class="brand-icon" aria-hidden="true"><span class="globe-line"></span><span class="globe-line hor"></span><span class="globe-center"></span></div>
-        <div class="brand-text"><span class="brand-main">UI PREVIEW</span><span class="brand-secondary">FICTIONAL DATA — NOT OFFICIAL</span></div>
+        <div class="brand-text"><span class="brand-main">UI PREVIEW</span><span class="brand-secondary">SYNTHETIC METRICS — NOT OFFICIAL</span></div>
       </div>
       <div class="brand-rule"></div>
       <div class="nav-category">WORKSPACE</div>
@@ -2400,7 +2400,7 @@ window.UNDSS_SEED_DATA =
   
     <div class="main-column">
       <header class="topbar">
-        <div class="breadcrumb"><span>DSS</span><span class="crumb-separator">/</span><span>ICSC WORKSPACE</span><span class="crumb-separator">/</span><strong id="currentBread">FOUR FICTIONAL COUNTRIES</strong></div>
+        <div class="breadcrumb"><span>DSS</span><span class="crumb-separator">/</span><span>ICSC WORKSPACE</span><span class="crumb-separator">/</span><strong id="currentBread">REAL DUTY STATION NAMES</strong></div>
         <div class="top-actions">
           <span class="privacy-indicator"><span class="lock-icon">◆</span> LOCAL WORKSPACE</span>
           <button class="small-action" id="quickExport" type="button">↓ <span>Export JSON</span></button>
@@ -2419,14 +2419,14 @@ window.UNDSS_SEED_DATA =
               <div class="field-wrap flex-grow"><label for="stationSelect">DUTY STATION & ICSC ID</label><div class="select-wrap"><select id="stationSelect"></select></div></div>
               <div class="field-wrap"><label for="stationSearch">FIND DUTY STATION</label><input id="stationSearch" type="search" placeholder="Search name or ICSC ID" aria-label="Filter duty stations"></div>
             </div>
-            <div class="selector-footer"><div class="selector-station"><span class="station-circle">◎</span> <span id="stationDisplay">Northhaven (sample)</span> <span id="stationIdDisplay" class="id-chip">DEMO-ALD-01</span></div><div id="pilotCount" class="selector-meta">20 fictional duty stations</div></div>
+            <div class="selector-footer"><div class="selector-station"><span class="station-circle">◎</span> <span id="stationDisplay">Juba</span> <span id="stationIdDisplay" class="id-chip">DEMO-SSD-01</span></div><div id="pilotCount" class="selector-meta">20 real place names, fake data</div></div>
           </div>
   
           <div class="coordinates-panel" aria-label="Selected duty station coordinates">
             <div class="coordinates-icon" aria-hidden="true">⌖</div>
             <div class="coordinates-content"><div class="coordinates-label">PUBLIC GEOGRAPHIC REFERENCE <span class="geo-badge">NOT ICSC VERIFIED</span></div>
               <div class="coordinates-number" id="coordinateDisplay">4.841564, 31.619985</div>
-              <div class="coordinates-provenance" id="coordinateProvenance">Generated demonstration coordinates · fictional latitude/longitude</div>
+              <div class="coordinates-provenance" id="coordinateProvenance">Generated demo coordinates (not real geographic positions)</div>
               <div class="coordinates-caution" id="coordinateCaution">This location is invented and is not an operational site.</div>
             </div>
             <div class="coordinates-actions"><button type="button" class="outline-btn" id="copyCoords" disabled>Copy coordinates</button><button type="button" class="outline-btn" id="mapCoords" disabled>Open external map ↗</button><a class="coordinates-source" id="coordinateSourceLink" target="_blank" rel="noopener noreferrer" hidden>Source record ↗</a></div>
@@ -2507,7 +2507,7 @@ window.UNDSS_SEED_DATA =
                 </div><div class="form-footer"><button type="button" class="danger-outline" id="removeStation">Delete station</button><button type="submit" class="primary-btn">Save station changes</button></div></form>
                 <div id="stationSourceRows" class="row-reference"></div>
               </article>
-              <aside class="panel add-card" id="addStationPanel"><div class="panel-titleline"><div><span class="section-kicker">EXPAND COVERAGE</span><h3>Add a new duty station</h3></div></div><p class="muted">Add another location in Alderra (fictional) or start a new country. The new station appears in both dropdowns immediately.</p><form id="newStationForm"><div class="form-field"><label for="newCountry">Country / area</label><input id="newCountry" placeholder="Country name" value="Alderra (fictional)" required></div><div class="form-field"><label for="newStation">Duty station name</label><input id="newStation" placeholder="e.g. New duty station" required></div><div class="form-field"><label for="newCode">ICSC duty station ID</label><input id="newCode" placeholder="e.g. DEMO999" required></div><div class="form-field"><label for="newLatitude">Latitude (optional)</label><input id="newLatitude" type="number" min="-90" max="90" step="any" placeholder="Decimal degrees"></div><div class="form-field"><label for="newLongitude">Longitude (optional)</label><input id="newLongitude" type="number" min="-180" max="180" step="any" placeholder="Decimal degrees"></div><button type="submit" class="primary-btn block-btn">Add station record</button></form><div class="add-info"><strong>Important</strong><p>New stations start with unavailable indicators until you populate them. Add country-wide SSIRS reports and SRM areas in their respective tabs.</p></div></aside>
+              <aside class="panel add-card" id="addStationPanel"><div class="panel-titleline"><div><span class="section-kicker">EXPAND COVERAGE</span><h3>Add a new duty station</h3></div></div><p class="muted">Add another location in South Sudan or start a new country. The new station appears in both dropdowns immediately.</p><form id="newStationForm"><div class="form-field"><label for="newCountry">Country / area</label><input id="newCountry" placeholder="Country name" value="South Sudan" required></div><div class="form-field"><label for="newStation">Duty station name</label><input id="newStation" placeholder="e.g. New duty station" required></div><div class="form-field"><label for="newCode">ICSC duty station ID</label><input id="newCode" placeholder="e.g. DEMO999" required></div><div class="form-field"><label for="newLatitude">Latitude (optional)</label><input id="newLatitude" type="number" min="-90" max="90" step="any" placeholder="Decimal degrees"></div><div class="form-field"><label for="newLongitude">Longitude (optional)</label><input id="newLongitude" type="number" min="-180" max="180" step="any" placeholder="Decimal degrees"></div><button type="submit" class="primary-btn block-btn">Add station record</button></form><div class="add-info"><strong>Important</strong><p>New stations start with unavailable indicators until you populate them. Add country-wide SSIRS reports and SRM areas in their respective tabs.</p></div></aside>
             </div>
           </div>
           <div class="settings-tab" id="settings-srm"><article class="panel settings-card"><div class="panel-titleline"><div><span class="section-kicker">RISK MATRIX EDITOR</span><h3>SRM regional assessments</h3></div><button class="outline-btn" id="addSrmArea" type="button">+ New SRM area</button></div><div class="form-row"><div class="form-field grow"><label for="srmEditSelect">SELECT SRM AREA</label><select id="srmEditSelect"></select></div></div><form id="srmEditForm"><div class="form-columns"><div class="form-field"><label for="editSrmCountry">Country</label><input id="editSrmCountry" required></div><div class="form-field"><label for="editSrmName">SRM area</label><input id="editSrmName" required></div><div class="form-field form-span"><label for="editSrmId">SRM ID</label><input id="editSrmId" required></div></div><div class="table-label table-label-spaced">THREAT LEVELS & RISK VALUES</div><div class="table-scroll"><table class="data-table edit-table"><thead><tr><th>CATEGORY</th><th>THREAT</th><th>PRESENT</th><th>PROJECTED</th><th></th></tr></thead><tbody id="srmEditThreats"></tbody></table></div><div class="form-footer"><button type="button" id="addThreat" class="outline-btn">+ Add threat</button><button type="submit" class="primary-btn">Save SRM assessment</button></div></form></article></div>
