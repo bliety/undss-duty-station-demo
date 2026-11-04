@@ -376,7 +376,7 @@ window.UNDSS_SEED_DATA =
       $('importFile').addEventListener('change',importData);
       $('resetDataset').addEventListener('click',resetData);
   }
-  wire();renderSelectors();renderOverview();
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){wire();renderSelectors();renderOverview();});}else{wire();renderSelectors();renderOverview();}
   })();
   
   </script>
