@@ -24,6 +24,17 @@
 .coordinates-actions button:disabled{opacity:.46;cursor:default}.coordinates-source{color:#1987b7;font-size:10px;font-weight:700;text-decoration:none;margin-top:3px}.coordinates-source:hover{text-decoration:underline}
 @media(max-width:760px){.coordinates-panel{align-items:flex-start;flex-wrap:wrap}.coordinates-actions{flex-direction:row;align-items:center;flex-wrap:wrap;width:100%;justify-content:flex-start}.coordinates-actions .outline-btn{width:auto}.coordinates-number{font-size:18px}}
 
+
+/* Demo: temporarily hide Settings; retain code for future development. */
+[data-page="settings"],#settingsPage,#quickExport{display:none!important}
+.duty-map-panel{margin:-8px 0 28px;background:#fff;border:1px solid #dce8ee;border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(20,51,75,.045)}
+.duty-map-heading{padding:14px 20px;border-bottom:1px solid #e5edf2}
+.duty-map-heading strong{display:block;font-size:15px;color:#173b59}
+.duty-map-heading span{display:block;margin-top:4px;font-size:10px;color:#708a9b;letter-spacing:.6px;font-weight:700}
+.duty-map-box{height:315px;background:#eaf2f6}
+.duty-map-box iframe{border:0;width:100%;height:100%;display:block}
+.duty-map-note{margin:0;padding:11px 18px 13px;color:#657f8e;font-size:11px;line-height:1.5}
+@media(max-width:560px){.duty-map-box{height:265px}.duty-map-heading{padding:12px 14px}}
 </style>
   <script>
 /* Fictional preview. Never import actual security data into this public preview. */
@@ -31,7 +42,7 @@ window.UNDSS_SEED_DATA =
 {
   "metadata": {
     "name": "UNDSS-style Duty Station Dashboard — public synthetic preview",
-    "version": "3.0-names-real-values-fake",
+    "version": "4.0-live-city-map",
     "countryScope": "Real duty-station names; synthetic metrics",
     "built": "2026-11-04",
     "reviewHeader": "DEMO · NO OFFICIAL DATA",
@@ -77,7 +88,7 @@ window.UNDSS_SEED_DATA =
         "field": "Fictional assessment risks"
       }
     ],
-    "coordinateDisclaimer": "REAL place names; FAKE numerical coordinates. Not ICSC geocodes, not site locations or navigation information. Map opening disabled."
+    "coordinateDisclaimer": "Approximate public city-centre coordinates only, not official ICSC duty-station coordinates or UN facilities. All risk/SSIRS/eligibility indicators remain simulated."
   },
   "stations": [
     {
@@ -98,11 +109,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 6.64,
-      "longitude": 29.78,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 4.85165,
+      "longitude": 31.58247,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.countrycoordinate.com/country-south-sudan/",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SSD-02",
@@ -122,11 +133,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 6.97,
-      "longitude": 30.19,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 7.70111,
+      "longitude": 27.98972,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.countrycoordinate.com/country-south-sudan/",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SSD-03",
@@ -146,11 +157,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 7.3,
-      "longitude": 30.6,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 9.53342,
+      "longitude": 31.66049,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.countrycoordinate.com/country-south-sudan/",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SSD-04",
@@ -170,11 +181,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 7.63,
-      "longitude": 31.01,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 9.231487,
+      "longitude": 29.800503,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.countrycoordinate.com/country-south-sudan/",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SSD-05",
@@ -194,11 +205,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 7.96,
-      "longitude": 31.42,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 6.213266,
+      "longitude": 31.565542,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.countrycoordinate.com/country-south-sudan/",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-KEN-01",
@@ -218,11 +229,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -1.435,
-      "longitude": 35.555,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": -1.28333,
+      "longitude": 36.81667,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/kenya",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-KEN-02",
@@ -242,11 +253,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -1.105,
-      "longitude": 35.965,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": -4.05466,
+      "longitude": 39.66359,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/kenya",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-KEN-03",
@@ -266,11 +277,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -0.775,
-      "longitude": 36.375,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": -0.10221,
+      "longitude": 34.76171,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/kenya",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-KEN-04",
@@ -290,11 +301,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -0.445,
-      "longitude": 36.785,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 3.71363,
+      "longitude": 34.8572,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/kenya",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-KEN-05",
@@ -314,11 +325,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": -0.115,
-      "longitude": 37.195,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 0.05244,
+      "longitude": 40.30855,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/kenya",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SOM-01",
@@ -338,11 +349,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 4.09,
-      "longitude": 45.33,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 2.03711,
+      "longitude": 45.34375,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geonames.org/advanced-search.html?country=SO",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SOM-02",
@@ -362,11 +373,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 4.42,
-      "longitude": 45.74,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 8.4061,
+      "longitude": 48.4832,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geonames.org/advanced-search.html?country=SO",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SOM-03",
@@ -386,11 +397,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 4.75,
-      "longitude": 46.15,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 9.56,
+      "longitude": 44.065,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geonames.org/advanced-search.html?country=SO",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SOM-04",
@@ -410,11 +421,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 5.08,
-      "longitude": 46.56,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": -0.358173,
+      "longitude": 42.545365,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geonames.org/advanced-search.html?country=SO",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-SOM-05",
@@ -434,11 +445,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 5.41,
-      "longitude": 46.97,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 6.77,
+      "longitude": 47.43,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geonames.org/advanced-search.html?country=SO",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-DEU-01",
@@ -458,11 +469,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 50.915,
-      "longitude": 10.305,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 52.52437,
+      "longitude": 13.41053,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/germany",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-DEU-02",
@@ -482,11 +493,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 51.245,
-      "longitude": 10.715,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 50.73438,
+      "longitude": 7.09549,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/germany",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-DEU-03",
@@ -506,11 +517,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 51.575,
-      "longitude": 11.125,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 53.55073,
+      "longitude": 9.99302,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/germany",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-DEU-04",
@@ -530,11 +541,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 51.905,
-      "longitude": 11.535,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 51.05089,
+      "longitude": 13.73832,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/germany",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     },
     {
       "id": "DEMO-DEU-05",
@@ -554,11 +565,11 @@ window.UNDSS_SEED_DATA =
       "srmMappingStatus": "SIMULATED SRM relationship — not a real operational area.",
       "notes": "The place name is real. All indicators, assessments, classifications and IDs are invented.",
       "sourceRows": {},
-      "latitude": 52.235,
-      "longitude": 11.945,
-      "coordinateSource": "Illustrative / randomly assigned for UI demo (NOT geographic truth)",
-      "coordinateSourceUrl": "",
-      "coordinatePrecision": "FAKE demo coordinates; do not use to locate a duty station"
+      "latitude": 48.13743,
+      "longitude": 11.57549,
+      "coordinateSource": "Public geographic city/town reference",
+      "coordinateSourceUrl": "https://www.geodatos.net/en/coordinates/germany",
+      "coordinatePrecision": "Approximate city/town centre (not UN premises or verified duty station)"
     }
   ],
   "srmAreas": [
@@ -2172,7 +2183,7 @@ window.UNDSS_SEED_DATA =
   /* UNDSS Duty Station Intelligence — local-first pilot. No network requests. */
   (function(){
   'use strict';
-  const KEY='undss-public-demo-realnames-fakedata-v3';
+  const KEY='undss-public-demo-citymap-v4';
   const MONTHS=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
   let db;
   let country='South Sudan', stationId='DEMO-SSD-01', editStationId='DEMO-SSD-01', editSrmId='DEMO-SRM-SSD-1', incidentCountry='South Sudan';
@@ -2232,13 +2243,18 @@ window.UNDSS_SEED_DATA =
       const notes=[s.dangerComments,s.familyComments,s.notes].filter(Boolean);
       $('stationNotes').hidden=!notes.length;
       $('stationNotes').textContent=notes.join(' | ');
-      renderCoordinates(s);renderSrm(s);renderIncidents(country);renderSources(s);
+      renderCoordinates(s);renderSrm(s);renderIncidents(country);
   }
   function renderCoordinates(s){const valid=geoValid(s),lat=Number(s.latitude),lon=Number(s.longitude);
       text('coordinateDisplay',valid?coordText(s):'Not available');
       text('coordinateProvenance',valid?fmt(s.coordinateSource)+' · '+fmt(s.coordinatePrecision):'Add a coordinate pair and its source in Settings → Duty stations');
-      text('coordinateCaution',valid?(s.coordinatePrecision||'').toLowerCase().includes('administrative')?'Administrative-area centre only — NOT a precise town or station point.':'Demonstration-only coordinate. Not a real-world or operational location.':'No coordinates supplied for this record.');
-      $('copyCoords').disabled=!valid;$('mapCoords').disabled=true;$('mapCoords').title='Map disabled — coordinates are fictional';
+      text('coordinateCaution',valid?'Approximate city/town centre only — not UN premises or an official ICSC point.':'No coordinates supplied for this record.');
+      $('copyCoords').disabled=!valid;$('mapCoords').disabled=!valid;$('mapCoords').title=valid?'Open city centre in OpenStreetMap':'No map point';
+      const iframe=$('stationMapFrame'),box=$('mapFrameBox');text('mapPlaceName',s.name+', '+s.country);
+      if(!valid){iframe.removeAttribute('src');iframe.hidden=true;}
+      else{iframe.hidden=false;const bb=[lon-.075,lat-.05,lon+.075,lat+.05].map(v=>v.toFixed(5)).join('%2C');
+      const url='https://www.openstreetmap.org/export/embed.html?bbox='+bb+'&layer=mapnik&marker='+lat.toFixed(5)+'%2C'+lon.toFixed(5);
+      if(iframe.getAttribute('src')!==url)iframe.setAttribute('src',url);}
       const link=$('coordinateSourceLink'),url=String(s.coordinateSourceUrl||'').trim();
       if(valid&&/^https:\/\/[^\s]+$/i.test(url)){link.href=url;link.hidden=false;}else{link.removeAttribute('href');link.hidden=true;}
   }
@@ -2378,7 +2394,7 @@ window.UNDSS_SEED_DATA =
   <style>.demo-watermark{padding:12px;background:#fff2c5;color:#684300;text-align:center;font-weight:700;font-size:13px;border-bottom:2px solid #cc9b00}</style>
   </head>
   <body>
-  <div class="demo-watermark">PUBLIC DEMO — REAL PLACE NAMES · ALL IDs, RATINGS, COUNTS, SRM, SSIRS AND COORDINATES ARE FAKE — NOT OFFICIAL</div>
+  <div class="demo-watermark">PUBLIC DEMO — REAL PLACES & APPROXIMATE CITY COORDINATES · ALL IDs AND SECURITY FIGURES ARE FAKE</div>
   <div class="shell">
     <aside class="sidebar" aria-label="Application navigation">
       <div class="brand">
@@ -2424,15 +2440,16 @@ window.UNDSS_SEED_DATA =
   
           <div class="coordinates-panel" aria-label="Selected duty station coordinates">
             <div class="coordinates-icon" aria-hidden="true">⌖</div>
-            <div class="coordinates-content"><div class="coordinates-label">PUBLIC GEOGRAPHIC REFERENCE <span class="geo-badge">NOT ICSC VERIFIED</span></div>
+            <div class="coordinates-content"><div class="coordinates-label">APPROXIMATE CITY LOCATION <span class="geo-badge">NOT ICSC VERIFIED</span></div>
               <div class="coordinates-number" id="coordinateDisplay">4.841564, 31.619985</div>
-              <div class="coordinates-provenance" id="coordinateProvenance">Generated demo coordinates (not real geographic positions)</div>
-              <div class="coordinates-caution" id="coordinateCaution">This location is invented and is not an operational site.</div>
+              <div class="coordinates-provenance" id="coordinateProvenance">Approximate publicly referenced city coordinates</div>
+              <div class="coordinates-caution" id="coordinateCaution">City centre shown, not UN premises or operational sites.</div>
             </div>
             <div class="coordinates-actions"><button type="button" class="outline-btn" id="copyCoords" disabled>Copy coordinates</button><button type="button" class="outline-btn" id="mapCoords" disabled>Open external map ↗</button><a class="coordinates-source" id="coordinateSourceLink" target="_blank" rel="noopener noreferrer" hidden>Source record ↗</a></div>
           </div>
   
-          <div class="section-heading"><div><span class="section-kicker">01 / POSITION & RESTRICTIONS</span><h2>Key indicators</h2></div><span class="section-asof">Read-only overview · Edit in Settings</span></div>
+          <section class="duty-map-panel" aria-label="Location map"><div class="duty-map-heading"><div><strong id="mapPlaceName">Selected city</strong><span>APPROXIMATE CITY CENTRE · OPENSTREETMAP</span></div></div><div id="mapFrameBox" class="duty-map-box"><iframe id="stationMapFrame" title="OpenStreetMap: selected city" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe></div><p class="duty-map-note">Approximate public city/town centre, not UN premises or an official duty-station location. Map tiles load from OpenStreetMap.</p></section>
+<div class="section-heading"><div><span class="section-kicker">01 / POSITION & RESTRICTIONS</span><h2>Key indicators</h2></div><span class="section-asof">Read-only demo · security values simulated</span></div>
           <div class="metrics">
             <article class="metric-card"><div class="metric-top"><span>DANGER PAY</span><span class="metric-symbol">◈</span></div><div id="metricDanger" class="metric-value">YES</div><div class="metric-detail" id="metricDangerDetail">October 2026</div><div class="metric-footer"><span class="accent-mark"></span> ICSC duty station · October cycle</div></article>
             <article class="metric-card"><div class="metric-top"><span>SECURITY RATING</span><span class="metric-symbol">◇</span></div><div id="metricSecurity" class="metric-value">D</div><div class="metric-detail" id="metricSecurityDetail">Current · Recommended D</div><div class="metric-footer"><span class="accent-mark"></span> 2026 review / submission</div></article>
@@ -2461,19 +2478,19 @@ window.UNDSS_SEED_DATA =
                 <div class="area-head"><div><div class="table-label">SELECTED SRM AREA</div><strong id="srmAreaName">Fictional Risk Zone</strong></div><span class="area-id" id="srmAreaId">SRM DEMO-SRM</span></div>
                 <div id="srmAreaAlert" class="mapping-warning">Provisional mapping — confirm the duty station's SRM area.</div>
                 <div class="table-scroll"><table class="data-table srm-table"><thead><tr><th>THREAT CATEGORY</th><th>THREAT LEVEL</th><th>PRESENT RISK</th><th>PROJECTED RISK</th></tr></thead><tbody id="srmRiskBody"></tbody></table></div>
-                <p class="card-footnote">SRM regional assessments are not automatically equivalent to duty-station-specific ratings.</p>
+                <p class="card-footnote">Fictional SRM values for illustration only.</p>
               </article>
             </div>
             <div class="stack">
               <article class="panel incidents-panel">
                 <div class="panel-titleline"><div><span class="section-kicker">04 / COUNTRY CONTEXT</span><h3>SSIRS incident overview</h3></div><span class="mini-label">COUNTRY LEVEL</span></div>
-                <p class="panel-subtitle">Reported incidents by month. The workbook records these by country, not ICSC duty station.</p>
+                <p class="panel-subtitle">Reported incidents by month. Simulated country-level counts only, not actual SSIRS incidents.</p>
                 <div class="incidents-totals"><strong id="incidentBigTotal">0</strong><span>total recorded incidents<br><b id="incidentPeriodText">No real data</b></span></div>
                 <div id="incidentChart" class="bar-chart" role="img" aria-label="Monthly incident counts for selected country"></div>
                 <div class="chart-divider"></div><div class="table-label table-label-spaced">INCIDENTS BY CATEGORY</div>
                 <div id="incidentTypeList" class="incident-types"></div>
               </article>
-              <article class="panel source-panel"><div class="panel-titleline"><div><span class="section-kicker">05 / PROVENANCE</span><h3>Data traceability</h3></div><span class="mini-label">5 SOURCES</span></div><div id="sourceList" class="source-list"></div><p class="card-footnote">Source workbook row numbers are available in Settings. Verify submission status and mapping before operational use.</p></article>
+              
             </div>
           </div>
           <footer class="page-foot">UNDSS STYLE CONCEPT · PILOT DATASET · INTERNAL REVIEW RECOMMENDED <span>DESIGNED FOR EXPANSION</span></footer>
