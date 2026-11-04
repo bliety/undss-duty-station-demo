@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="UNDSS Duty Station Intelligence — local-first pilot dashboard, Exampleland (fictional)">
+  <meta name="description" content="UNDSS Duty Station Intelligence — local-first pilot dashboard, Alderra (fictional)">
   <title>Duty Station Intelligence | Fictional Preview</title>
   <style>
 :root{--un-blue:#009edb;--un-blue-dark:#007bb6;--navy:#0d2c47;--navy2:#173b59;--ink:#173148;--muted:#687c8c;--border:#dae4ea;--surface:#fff;--page:#f3f7f9;--sky:#e8f6fb;--soft:#f9fbfd;--green:#15805c;--amber:#bf7b19;--red:#ae4242;--shadow:0 4px 20px rgba(20,51,75,.045)}
@@ -30,146 +30,2141 @@
 window.UNDSS_SEED_DATA =
 {
   "metadata": {
-    "name": "Fictional Duty Station Demo",
-    "version": "demo-1",
-    "countryScope": "Fictional example only",
-    "built": "",
-    "reviewHeader": "FICTIONAL DEMO ONLY",
-    "dangerPriorPeriod": "Sample period A",
-    "dangerPayPeriod": "Sample period B",
-    "familyCurrentPeriod": "Sample period A",
-    "familySubmissionPeriod": "Sample period B",
-    "incidentsPeriod": "No real incident records",
+    "name": "Fictional Duty Station Dashboard — populated demo",
+    "version": "2.0-demo",
+    "countryScope": "4 invented countries",
+    "built": "2026-11-04",
+    "reviewHeader": "SAMPLE DATA · 2026 / 2027",
+    "dangerPriorPeriod": "July 2026 · sample",
+    "dangerPayPeriod": "October 2026 · sample",
+    "familyCurrentPeriod": "1 July 2026 · sample",
+    "familySubmissionPeriod": "1 January 2027 · sample",
+    "incidentsPeriod": "January–September 2026 · synthetic",
     "sources": [
       {
         "key": "danger",
-        "label": "DANGER · SAMPLE ONLY",
-        "file": "Fictional demo values",
-        "sheet": "Example",
-        "field": "Not based on official records"
+        "label": "Danger Pay · fictional",
+        "file": "SYNTHETIC_Danger_Pay.xlsx",
+        "sheet": "Demo",
+        "field": "October 2026 Y/N (fictional)"
       },
       {
         "key": "security",
-        "label": "SECURITY · SAMPLE ONLY",
-        "file": "Fictional demo values",
-        "sheet": "Example",
-        "field": "Not based on official records"
+        "label": "Security ratings · fictional",
+        "file": "SYNTHETIC_Security.xlsx",
+        "sheet": "Demo",
+        "field": "Current / recommended rating (fictional)"
       },
       {
         "key": "family",
-        "label": "FAMILY · SAMPLE ONLY",
-        "file": "Fictional demo values",
-        "sheet": "Example",
-        "field": "Not based on official records"
+        "label": "Family restrictions · fictional",
+        "file": "SYNTHETIC_Family.xlsx",
+        "sheet": "Demo",
+        "field": "Non-family and hardship fields (fictional)"
       },
       {
         "key": "events",
-        "label": "EVENTS · SAMPLE ONLY",
-        "file": "Fictional demo values",
-        "sheet": "Example",
-        "field": "Not based on official records"
+        "label": "SSIRS · fictional",
+        "file": "SYNTHETIC_SSIRS.xlsx",
+        "sheet": "Demo",
+        "field": "Country-month incident counts (fictional)"
       },
       {
         "key": "areas",
-        "label": "AREAS · SAMPLE ONLY",
-        "file": "Fictional demo values",
-        "sheet": "Example",
-        "field": "Not based on official records"
+        "label": "SRM · fictional",
+        "file": "SYNTHETIC_SRM.xlsx",
+        "sheet": "Demo",
+        "field": "Regional present/projected risks (fictional)"
       }
     ],
-    "coordinateDisclaimer": "All data are fabricated. Do not use for operational decisions."
+    "coordinateDisclaimer": "Numerical coordinates are fictional. They do not represent ICSC duty stations, real-world sites, UN facilities, or approved navigational information."
   },
   "stations": [
     {
-      "country": "Exampleland (fictional)",
-      "dangerPayOct2026": "—",
-      "dangerPayJuly2026": "—",
-      "dangerComments": "Fictional preview — unavailable",
-      "securityCurrent": "—",
-      "securityRecommended": "—",
-      "securityComment": "Fictional preview",
-      "hardshipJuly2026": "—",
-      "nfdJuly2026": "—",
-      "nfdJan2027": "—",
-      "familyComments": "",
-      "srmAreaId": "DEMO-SRM",
-      "srmMappingStatus": "Demo mapping only",
-      "notes": "Demo only — no actual ICSC or UNDSS data",
+      "id": "DEMO-ALD-01",
+      "country": "Alderra (fictional)",
+      "name": "Northhaven (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "A",
+      "securityRecommended": "A",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "B",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-ALD-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
       "sourceRows": {},
-      "latitude": null,
-      "longitude": null,
-      "coordinateSource": "",
+      "latitude": 11.26,
+      "longitude": 15.74,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "",
-      "id": "DEMO001",
-      "name": "Illustrative Capital"
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
     },
     {
-      "country": "Exampleland (fictional)",
-      "dangerPayOct2026": "—",
-      "dangerPayJuly2026": "—",
-      "dangerComments": "Fictional preview — unavailable",
-      "securityCurrent": "—",
-      "securityRecommended": "—",
-      "securityComment": "Fictional preview",
-      "hardshipJuly2026": "—",
-      "nfdJuly2026": "—",
-      "nfdJan2027": "—",
-      "familyComments": "",
-      "srmAreaId": "",
-      "srmMappingStatus": "Demo mapping only",
-      "notes": "Demo only — no actual ICSC or UNDSS data",
+      "id": "DEMO-ALD-02",
+      "country": "Alderra (fictional)",
+      "name": "Port Alder (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "B",
+      "securityRecommended": "B",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "C",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-ALD-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
       "sourceRows": {},
-      "latitude": null,
-      "longitude": null,
-      "coordinateSource": "",
+      "latitude": 12.13,
+      "longitude": 16.87,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
       "coordinateSourceUrl": "",
-      "coordinatePrecision": "",
-      "id": "DEMO002",
-      "name": "Illustrative Field Station"
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-ALD-03",
+      "country": "Alderra (fictional)",
+      "name": "Dunmere (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "C",
+      "securityRecommended": "D",
+      "securityComment": "Simulated recommendation C → D",
+      "hardshipJuly2026": "D",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-ALD-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 13,
+      "longitude": 18,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-ALD-04",
+      "country": "Alderra (fictional)",
+      "name": "Eastbank (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "D",
+      "securityRecommended": "C",
+      "securityComment": "Simulated recommendation D → C",
+      "hardshipJuly2026": "E",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-ALD-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 13.87,
+      "longitude": 19.13,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-ALD-05",
+      "country": "Alderra (fictional)",
+      "name": "Ridgepoint (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "E",
+      "securityRecommended": "E",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "A",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-ALD-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 14.74,
+      "longitude": 20.26,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-BRI-01",
+      "country": "Brinovia (fictional)",
+      "name": "Bellford (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "C",
+      "securityRecommended": "C",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "C",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-BRI-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 21.31,
+      "longitude": 41.68,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-BRI-02",
+      "country": "Brinovia (fictional)",
+      "name": "Stonegate (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "D",
+      "securityRecommended": "E",
+      "securityComment": "Simulated recommendation D → E",
+      "hardshipJuly2026": "D",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-BRI-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 22.18,
+      "longitude": 42.81,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-BRI-03",
+      "country": "Brinovia (fictional)",
+      "name": "Greenford (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "E",
+      "securityRecommended": "D",
+      "securityComment": "Simulated recommendation E → D",
+      "hardshipJuly2026": "E",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-BRI-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 23.05,
+      "longitude": 43.94,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-BRI-04",
+      "country": "Brinovia (fictional)",
+      "name": "Highmoor (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "A",
+      "securityRecommended": "A",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "A",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-BRI-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 23.92,
+      "longitude": 45.07,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-BRI-05",
+      "country": "Brinovia (fictional)",
+      "name": "Lakecrest (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "B",
+      "securityRecommended": "C",
+      "securityComment": "Simulated recommendation B → C",
+      "hardshipJuly2026": "B",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-BRI-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": 24.79,
+      "longitude": 46.2,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-CAS-01",
+      "country": "Caspiria (fictional)",
+      "name": "Merrow (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "E",
+      "securityRecommended": "E",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "D",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-CAS-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -15.64,
+      "longitude": 64.62,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-CAS-02",
+      "country": "Caspiria (fictional)",
+      "name": "Valeport (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "A",
+      "securityRecommended": "A",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "E",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-CAS-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -14.77,
+      "longitude": 65.75,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-CAS-03",
+      "country": "Caspiria (fictional)",
+      "name": "Ashford (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "B",
+      "securityRecommended": "B",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "A",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-CAS-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -13.9,
+      "longitude": 66.88,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-CAS-04",
+      "country": "Caspiria (fictional)",
+      "name": "Southcrest (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "C",
+      "securityRecommended": "D",
+      "securityComment": "Simulated recommendation C → D",
+      "hardshipJuly2026": "B",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-CAS-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -13.03,
+      "longitude": 68.01,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-CAS-05",
+      "country": "Caspiria (fictional)",
+      "name": "Westhaven (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "D",
+      "securityRecommended": "C",
+      "securityComment": "Simulated recommendation D → C",
+      "hardshipJuly2026": "C",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-CAS-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -12.16,
+      "longitude": 69.14,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-DEM-01",
+      "country": "Demeris (fictional)",
+      "name": "Cedarreach (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "B",
+      "securityRecommended": "A",
+      "securityComment": "Simulated recommendation B → A",
+      "hardshipJuly2026": "E",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-DEM-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -5.59,
+      "longitude": -41.44,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-DEM-02",
+      "country": "Demeris (fictional)",
+      "name": "Solara (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "C",
+      "securityRecommended": "C",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "A",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-DEM-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -4.72,
+      "longitude": -40.31,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-DEM-03",
+      "country": "Demeris (fictional)",
+      "name": "Pinewatch (sample)",
+      "dangerPayOct2026": "N",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "D",
+      "securityRecommended": "E",
+      "securityComment": "Simulated recommendation D → E",
+      "hardshipJuly2026": "B",
+      "nfdJuly2026": "Y",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-DEM-1",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -3.85,
+      "longitude": -39.18,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-DEM-04",
+      "country": "Demeris (fictional)",
+      "name": "Eastfall (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "N",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "E",
+      "securityRecommended": "D",
+      "securityComment": "Simulated recommendation E → D",
+      "hardshipJuly2026": "C",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "Y",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-DEM-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -2.98,
+      "longitude": -38.05,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
+    },
+    {
+      "id": "DEMO-DEM-05",
+      "country": "Demeris (fictional)",
+      "name": "Vesper Bay (sample)",
+      "dangerPayOct2026": "Y",
+      "dangerPayJuly2026": "Y",
+      "dangerComments": "Fictional Danger Pay determination for interface testing.",
+      "securityCurrent": "A",
+      "securityRecommended": "A",
+      "securityComment": "No change (synthetic)",
+      "hardshipJuly2026": "D",
+      "nfdJuly2026": "N",
+      "nfdJan2027": "N",
+      "familyComments": "Fictional non-family restriction status for demonstration.",
+      "srmAreaId": "DEMO-SRM-DEM-2",
+      "srmMappingStatus": "Mock area mapping · non-operational",
+      "notes": "DEMO ONLY — synthetic records; not an official ICSC/UNDSS determination.",
+      "sourceRows": {},
+      "latitude": -2.11,
+      "longitude": -36.92,
+      "coordinateSource": "Generated demonstration coordinate (fictional)",
+      "coordinateSourceUrl": "",
+      "coordinatePrecision": "Illustrative latitude/longitude only — not a real location"
     }
   ],
   "srmAreas": [
     {
-      "id": "DEMO-SRM",
-      "country": "Exampleland (fictional)",
-      "name": "Fictional Risk Zone",
+      "id": "DEMO-SRM-ALD-1",
+      "country": "Alderra (fictional)",
+      "name": "Northern Region (synthetic)",
+      "sourceRows": [],
       "threats": [
         {
-          "category": "Armed Conflict",
-          "threatLevel": "—",
-          "presentRisk": "—",
-          "projectedRisk": "—"
+          "category": "Armed conflict",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "1-Very Low"
         },
         {
           "category": "Terrorism",
-          "threatLevel": "—",
-          "presentRisk": "—",
-          "projectedRisk": "—"
+          "threatLevel": "4-Substantial",
+          "presentRisk": "2-Low",
+          "projectedRisk": "2-Low"
         },
         {
           "category": "Crime",
-          "threatLevel": "—",
-          "presentRisk": "—",
-          "projectedRisk": "—"
+          "threatLevel": "2-Low",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "4-High"
         },
         {
-          "category": "Civil Unrest",
-          "threatLevel": "—",
-          "presentRisk": "—",
-          "projectedRisk": "—"
+          "category": "Civil unrest",
+          "threatLevel": "5-High",
+          "presentRisk": "4-High",
+          "projectedRisk": "3-Medium"
         },
         {
           "category": "Hazards",
-          "threatLevel": "—",
-          "presentRisk": "—",
-          "projectedRisk": "—"
+          "threatLevel": "3-Moderate",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
         }
-      ],
-      "sourceRows": []
+      ]
+    },
+    {
+      "id": "DEMO-SRM-ALD-2",
+      "country": "Alderra (fictional)",
+      "name": "Southern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "2-Low",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "5-High",
+          "presentRisk": "4-High",
+          "projectedRisk": "4-High"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "1-Very Low"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "2-Low",
+          "projectedRisk": "2-Low"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-SRM-BRI-1",
+      "country": "Brinovia (fictional)",
+      "name": "Northern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "2-Low",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "4-High"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "4-High",
+          "projectedRisk": "3-Medium"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "2-Low",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "5-High",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "2-Low"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-SRM-BRI-2",
+      "country": "Brinovia (fictional)",
+      "name": "Southern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "4-High",
+          "projectedRisk": "4-High"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "2-Low",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "5-High",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "1-Very Low"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "2-Low",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "4-High"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-SRM-CAS-1",
+      "country": "Caspiria (fictional)",
+      "name": "Northern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "5-High",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "4-High"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "4-High",
+          "projectedRisk": "3-Medium"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "2-Low",
+          "presentRisk": "2-Low",
+          "projectedRisk": "1-Very Low"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-SRM-CAS-2",
+      "country": "Caspiria (fictional)",
+      "name": "Southern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "1-Very Low"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "2-Low",
+          "presentRisk": "2-Low",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "5-High",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "4-High"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "4-High",
+          "projectedRisk": "3-Medium"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-SRM-DEM-1",
+      "country": "Demeris (fictional)",
+      "name": "Northern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "2-Low",
+          "presentRisk": "4-High",
+          "projectedRisk": "3-Medium"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "5-High",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "2-Low",
+          "projectedRisk": "1-Very Low"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "3-Medium"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-SRM-DEM-2",
+      "country": "Demeris (fictional)",
+      "name": "Southern Region (synthetic)",
+      "sourceRows": [],
+      "threats": [
+        {
+          "category": "Armed conflict",
+          "threatLevel": "3-Moderate",
+          "presentRisk": "1-Very Low",
+          "projectedRisk": "1-Very Low"
+        },
+        {
+          "category": "Terrorism",
+          "threatLevel": "1-Minimal",
+          "presentRisk": "2-Low",
+          "projectedRisk": "2-Low"
+        },
+        {
+          "category": "Crime",
+          "threatLevel": "4-Substantial",
+          "presentRisk": "3-Medium",
+          "projectedRisk": "4-High"
+        },
+        {
+          "category": "Civil unrest",
+          "threatLevel": "2-Low",
+          "presentRisk": "4-High",
+          "projectedRisk": "3-Medium"
+        },
+        {
+          "category": "Hazards",
+          "threatLevel": "5-High",
+          "presentRisk": "5-Very High",
+          "projectedRisk": "5-Very High"
+        }
+      ]
     }
   ],
-  "incidents": []
+  "incidents": [
+    {
+      "id": "MOCK-ALD-1-1",
+      "country": "Alderra (fictional)",
+      "month": "JAN",
+      "category": "Security incident",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-1-2",
+      "country": "Alderra (fictional)",
+      "month": "JAN",
+      "category": "Crime / theft",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-1-3",
+      "country": "Alderra (fictional)",
+      "month": "JAN",
+      "category": "Civil disturbance",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-1-4",
+      "country": "Alderra (fictional)",
+      "month": "JAN",
+      "category": "Road movement disruption",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-2-1",
+      "country": "Alderra (fictional)",
+      "month": "FEB",
+      "category": "Crime / theft",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-2-2",
+      "country": "Alderra (fictional)",
+      "month": "FEB",
+      "category": "Civil disturbance",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-2-3",
+      "country": "Alderra (fictional)",
+      "month": "FEB",
+      "category": "Road movement disruption",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-2-4",
+      "country": "Alderra (fictional)",
+      "month": "FEB",
+      "category": "Environmental hazard",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-3-1",
+      "country": "Alderra (fictional)",
+      "month": "MAR",
+      "category": "Civil disturbance",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-3-2",
+      "country": "Alderra (fictional)",
+      "month": "MAR",
+      "category": "Road movement disruption",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-3-3",
+      "country": "Alderra (fictional)",
+      "month": "MAR",
+      "category": "Environmental hazard",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-3-4",
+      "country": "Alderra (fictional)",
+      "month": "MAR",
+      "category": "Threats to personnel",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-4-1",
+      "country": "Alderra (fictional)",
+      "month": "APR",
+      "category": "Road movement disruption",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-4-2",
+      "country": "Alderra (fictional)",
+      "month": "APR",
+      "category": "Environmental hazard",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-4-3",
+      "country": "Alderra (fictional)",
+      "month": "APR",
+      "category": "Threats to personnel",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-4-4",
+      "country": "Alderra (fictional)",
+      "month": "APR",
+      "category": "Security incident",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-5-1",
+      "country": "Alderra (fictional)",
+      "month": "MAY",
+      "category": "Environmental hazard",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-5-2",
+      "country": "Alderra (fictional)",
+      "month": "MAY",
+      "category": "Threats to personnel",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-5-3",
+      "country": "Alderra (fictional)",
+      "month": "MAY",
+      "category": "Security incident",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-5-4",
+      "country": "Alderra (fictional)",
+      "month": "MAY",
+      "category": "Crime / theft",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-6-1",
+      "country": "Alderra (fictional)",
+      "month": "JUN",
+      "category": "Threats to personnel",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-6-2",
+      "country": "Alderra (fictional)",
+      "month": "JUN",
+      "category": "Security incident",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-6-3",
+      "country": "Alderra (fictional)",
+      "month": "JUN",
+      "category": "Crime / theft",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-6-4",
+      "country": "Alderra (fictional)",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-7-1",
+      "country": "Alderra (fictional)",
+      "month": "JUL",
+      "category": "Security incident",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-7-2",
+      "country": "Alderra (fictional)",
+      "month": "JUL",
+      "category": "Crime / theft",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-7-3",
+      "country": "Alderra (fictional)",
+      "month": "JUL",
+      "category": "Civil disturbance",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-7-4",
+      "country": "Alderra (fictional)",
+      "month": "JUL",
+      "category": "Road movement disruption",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-8-1",
+      "country": "Alderra (fictional)",
+      "month": "AUG",
+      "category": "Crime / theft",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-8-2",
+      "country": "Alderra (fictional)",
+      "month": "AUG",
+      "category": "Civil disturbance",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-8-3",
+      "country": "Alderra (fictional)",
+      "month": "AUG",
+      "category": "Road movement disruption",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-8-4",
+      "country": "Alderra (fictional)",
+      "month": "AUG",
+      "category": "Environmental hazard",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-9-1",
+      "country": "Alderra (fictional)",
+      "month": "SEP",
+      "category": "Civil disturbance",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-9-2",
+      "country": "Alderra (fictional)",
+      "month": "SEP",
+      "category": "Road movement disruption",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-9-3",
+      "country": "Alderra (fictional)",
+      "month": "SEP",
+      "category": "Environmental hazard",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-ALD-9-4",
+      "country": "Alderra (fictional)",
+      "month": "SEP",
+      "category": "Threats to personnel",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-1-1",
+      "country": "Brinovia (fictional)",
+      "month": "JAN",
+      "category": "Crime / theft",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-1-2",
+      "country": "Brinovia (fictional)",
+      "month": "JAN",
+      "category": "Civil disturbance",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-1-3",
+      "country": "Brinovia (fictional)",
+      "month": "JAN",
+      "category": "Road movement disruption",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-1-4",
+      "country": "Brinovia (fictional)",
+      "month": "JAN",
+      "category": "Environmental hazard",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-2-1",
+      "country": "Brinovia (fictional)",
+      "month": "FEB",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-2-2",
+      "country": "Brinovia (fictional)",
+      "month": "FEB",
+      "category": "Road movement disruption",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-2-3",
+      "country": "Brinovia (fictional)",
+      "month": "FEB",
+      "category": "Environmental hazard",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-2-4",
+      "country": "Brinovia (fictional)",
+      "month": "FEB",
+      "category": "Threats to personnel",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-3-1",
+      "country": "Brinovia (fictional)",
+      "month": "MAR",
+      "category": "Road movement disruption",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-3-2",
+      "country": "Brinovia (fictional)",
+      "month": "MAR",
+      "category": "Environmental hazard",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-3-3",
+      "country": "Brinovia (fictional)",
+      "month": "MAR",
+      "category": "Threats to personnel",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-3-4",
+      "country": "Brinovia (fictional)",
+      "month": "MAR",
+      "category": "Security incident",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-4-1",
+      "country": "Brinovia (fictional)",
+      "month": "APR",
+      "category": "Environmental hazard",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-4-2",
+      "country": "Brinovia (fictional)",
+      "month": "APR",
+      "category": "Threats to personnel",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-4-3",
+      "country": "Brinovia (fictional)",
+      "month": "APR",
+      "category": "Security incident",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-4-4",
+      "country": "Brinovia (fictional)",
+      "month": "APR",
+      "category": "Crime / theft",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-5-1",
+      "country": "Brinovia (fictional)",
+      "month": "MAY",
+      "category": "Threats to personnel",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-5-2",
+      "country": "Brinovia (fictional)",
+      "month": "MAY",
+      "category": "Security incident",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-5-3",
+      "country": "Brinovia (fictional)",
+      "month": "MAY",
+      "category": "Crime / theft",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-5-4",
+      "country": "Brinovia (fictional)",
+      "month": "MAY",
+      "category": "Civil disturbance",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-6-1",
+      "country": "Brinovia (fictional)",
+      "month": "JUN",
+      "category": "Security incident",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-6-2",
+      "country": "Brinovia (fictional)",
+      "month": "JUN",
+      "category": "Crime / theft",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-6-3",
+      "country": "Brinovia (fictional)",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-6-4",
+      "country": "Brinovia (fictional)",
+      "month": "JUN",
+      "category": "Road movement disruption",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-7-1",
+      "country": "Brinovia (fictional)",
+      "month": "JUL",
+      "category": "Crime / theft",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-7-2",
+      "country": "Brinovia (fictional)",
+      "month": "JUL",
+      "category": "Civil disturbance",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-7-3",
+      "country": "Brinovia (fictional)",
+      "month": "JUL",
+      "category": "Road movement disruption",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-7-4",
+      "country": "Brinovia (fictional)",
+      "month": "JUL",
+      "category": "Environmental hazard",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-8-1",
+      "country": "Brinovia (fictional)",
+      "month": "AUG",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-8-2",
+      "country": "Brinovia (fictional)",
+      "month": "AUG",
+      "category": "Road movement disruption",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-8-3",
+      "country": "Brinovia (fictional)",
+      "month": "AUG",
+      "category": "Environmental hazard",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-8-4",
+      "country": "Brinovia (fictional)",
+      "month": "AUG",
+      "category": "Threats to personnel",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-9-1",
+      "country": "Brinovia (fictional)",
+      "month": "SEP",
+      "category": "Road movement disruption",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-9-2",
+      "country": "Brinovia (fictional)",
+      "month": "SEP",
+      "category": "Environmental hazard",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-9-3",
+      "country": "Brinovia (fictional)",
+      "month": "SEP",
+      "category": "Threats to personnel",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-BRI-9-4",
+      "country": "Brinovia (fictional)",
+      "month": "SEP",
+      "category": "Security incident",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-1-1",
+      "country": "Caspiria (fictional)",
+      "month": "JAN",
+      "category": "Civil disturbance",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-1-2",
+      "country": "Caspiria (fictional)",
+      "month": "JAN",
+      "category": "Road movement disruption",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-1-3",
+      "country": "Caspiria (fictional)",
+      "month": "JAN",
+      "category": "Environmental hazard",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-1-4",
+      "country": "Caspiria (fictional)",
+      "month": "JAN",
+      "category": "Threats to personnel",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-2-1",
+      "country": "Caspiria (fictional)",
+      "month": "FEB",
+      "category": "Road movement disruption",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-2-2",
+      "country": "Caspiria (fictional)",
+      "month": "FEB",
+      "category": "Environmental hazard",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-2-3",
+      "country": "Caspiria (fictional)",
+      "month": "FEB",
+      "category": "Threats to personnel",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-2-4",
+      "country": "Caspiria (fictional)",
+      "month": "FEB",
+      "category": "Security incident",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-3-1",
+      "country": "Caspiria (fictional)",
+      "month": "MAR",
+      "category": "Environmental hazard",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-3-2",
+      "country": "Caspiria (fictional)",
+      "month": "MAR",
+      "category": "Threats to personnel",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-3-3",
+      "country": "Caspiria (fictional)",
+      "month": "MAR",
+      "category": "Security incident",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-3-4",
+      "country": "Caspiria (fictional)",
+      "month": "MAR",
+      "category": "Crime / theft",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-4-1",
+      "country": "Caspiria (fictional)",
+      "month": "APR",
+      "category": "Threats to personnel",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-4-2",
+      "country": "Caspiria (fictional)",
+      "month": "APR",
+      "category": "Security incident",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-4-3",
+      "country": "Caspiria (fictional)",
+      "month": "APR",
+      "category": "Crime / theft",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-4-4",
+      "country": "Caspiria (fictional)",
+      "month": "APR",
+      "category": "Civil disturbance",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-5-1",
+      "country": "Caspiria (fictional)",
+      "month": "MAY",
+      "category": "Security incident",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-5-2",
+      "country": "Caspiria (fictional)",
+      "month": "MAY",
+      "category": "Crime / theft",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-5-3",
+      "country": "Caspiria (fictional)",
+      "month": "MAY",
+      "category": "Civil disturbance",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-5-4",
+      "country": "Caspiria (fictional)",
+      "month": "MAY",
+      "category": "Road movement disruption",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-6-1",
+      "country": "Caspiria (fictional)",
+      "month": "JUN",
+      "category": "Crime / theft",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-6-2",
+      "country": "Caspiria (fictional)",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-6-3",
+      "country": "Caspiria (fictional)",
+      "month": "JUN",
+      "category": "Road movement disruption",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-6-4",
+      "country": "Caspiria (fictional)",
+      "month": "JUN",
+      "category": "Environmental hazard",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-7-1",
+      "country": "Caspiria (fictional)",
+      "month": "JUL",
+      "category": "Civil disturbance",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-7-2",
+      "country": "Caspiria (fictional)",
+      "month": "JUL",
+      "category": "Road movement disruption",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-7-3",
+      "country": "Caspiria (fictional)",
+      "month": "JUL",
+      "category": "Environmental hazard",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-7-4",
+      "country": "Caspiria (fictional)",
+      "month": "JUL",
+      "category": "Threats to personnel",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-8-1",
+      "country": "Caspiria (fictional)",
+      "month": "AUG",
+      "category": "Road movement disruption",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-8-2",
+      "country": "Caspiria (fictional)",
+      "month": "AUG",
+      "category": "Environmental hazard",
+      "count": 4,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-8-3",
+      "country": "Caspiria (fictional)",
+      "month": "AUG",
+      "category": "Threats to personnel",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-8-4",
+      "country": "Caspiria (fictional)",
+      "month": "AUG",
+      "category": "Security incident",
+      "count": 14,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-9-1",
+      "country": "Caspiria (fictional)",
+      "month": "SEP",
+      "category": "Environmental hazard",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-9-2",
+      "country": "Caspiria (fictional)",
+      "month": "SEP",
+      "category": "Threats to personnel",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-9-3",
+      "country": "Caspiria (fictional)",
+      "month": "SEP",
+      "category": "Security incident",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-CAS-9-4",
+      "country": "Caspiria (fictional)",
+      "month": "SEP",
+      "category": "Crime / theft",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-1-1",
+      "country": "Demeris (fictional)",
+      "month": "JAN",
+      "category": "Road movement disruption",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-1-2",
+      "country": "Demeris (fictional)",
+      "month": "JAN",
+      "category": "Environmental hazard",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-1-3",
+      "country": "Demeris (fictional)",
+      "month": "JAN",
+      "category": "Threats to personnel",
+      "count": 8,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-1-4",
+      "country": "Demeris (fictional)",
+      "month": "JAN",
+      "category": "Security incident",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-2-1",
+      "country": "Demeris (fictional)",
+      "month": "FEB",
+      "category": "Environmental hazard",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-2-2",
+      "country": "Demeris (fictional)",
+      "month": "FEB",
+      "category": "Threats to personnel",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-2-3",
+      "country": "Demeris (fictional)",
+      "month": "FEB",
+      "category": "Security incident",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-2-4",
+      "country": "Demeris (fictional)",
+      "month": "FEB",
+      "category": "Crime / theft",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-3-1",
+      "country": "Demeris (fictional)",
+      "month": "MAR",
+      "category": "Threats to personnel",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-3-2",
+      "country": "Demeris (fictional)",
+      "month": "MAR",
+      "category": "Security incident",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-3-3",
+      "country": "Demeris (fictional)",
+      "month": "MAR",
+      "category": "Crime / theft",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-3-4",
+      "country": "Demeris (fictional)",
+      "month": "MAR",
+      "category": "Civil disturbance",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-4-1",
+      "country": "Demeris (fictional)",
+      "month": "APR",
+      "category": "Security incident",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-4-2",
+      "country": "Demeris (fictional)",
+      "month": "APR",
+      "category": "Crime / theft",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-4-3",
+      "country": "Demeris (fictional)",
+      "month": "APR",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-4-4",
+      "country": "Demeris (fictional)",
+      "month": "APR",
+      "category": "Road movement disruption",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-5-1",
+      "country": "Demeris (fictional)",
+      "month": "MAY",
+      "category": "Crime / theft",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-5-2",
+      "country": "Demeris (fictional)",
+      "month": "MAY",
+      "category": "Civil disturbance",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-5-3",
+      "country": "Demeris (fictional)",
+      "month": "MAY",
+      "category": "Road movement disruption",
+      "count": 2,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-5-4",
+      "country": "Demeris (fictional)",
+      "month": "MAY",
+      "category": "Environmental hazard",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-6-1",
+      "country": "Demeris (fictional)",
+      "month": "JUN",
+      "category": "Civil disturbance",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-6-2",
+      "country": "Demeris (fictional)",
+      "month": "JUN",
+      "category": "Road movement disruption",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-6-3",
+      "country": "Demeris (fictional)",
+      "month": "JUN",
+      "category": "Environmental hazard",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-6-4",
+      "country": "Demeris (fictional)",
+      "month": "JUN",
+      "category": "Threats to personnel",
+      "count": 7,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-7-1",
+      "country": "Demeris (fictional)",
+      "month": "JUL",
+      "category": "Road movement disruption",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-7-2",
+      "country": "Demeris (fictional)",
+      "month": "JUL",
+      "category": "Environmental hazard",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-7-3",
+      "country": "Demeris (fictional)",
+      "month": "JUL",
+      "category": "Threats to personnel",
+      "count": 6,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-7-4",
+      "country": "Demeris (fictional)",
+      "month": "JUL",
+      "category": "Security incident",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-8-1",
+      "country": "Demeris (fictional)",
+      "month": "AUG",
+      "category": "Environmental hazard",
+      "count": 5,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-8-2",
+      "country": "Demeris (fictional)",
+      "month": "AUG",
+      "category": "Threats to personnel",
+      "count": 3,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-8-3",
+      "country": "Demeris (fictional)",
+      "month": "AUG",
+      "category": "Security incident",
+      "count": 1,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-8-4",
+      "country": "Demeris (fictional)",
+      "month": "AUG",
+      "category": "Crime / theft",
+      "count": 13,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-9-1",
+      "country": "Demeris (fictional)",
+      "month": "SEP",
+      "category": "Threats to personnel",
+      "count": 12,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-9-2",
+      "country": "Demeris (fictional)",
+      "month": "SEP",
+      "category": "Security incident",
+      "count": 11,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-9-3",
+      "country": "Demeris (fictional)",
+      "month": "SEP",
+      "category": "Crime / theft",
+      "count": 10,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    },
+    {
+      "id": "MOCK-DEM-9-4",
+      "country": "Demeris (fictional)",
+      "month": "SEP",
+      "category": "Civil disturbance",
+      "count": 9,
+      "details": "Simulated report count for design testing.",
+      "sourceRow": null
+    }
+  ]
 };
 
 </script>
@@ -177,10 +2172,10 @@ window.UNDSS_SEED_DATA =
   /* UNDSS Duty Station Intelligence — local-first pilot. No network requests. */
   (function(){
   'use strict';
-  const KEY='undss-public-sample-demo-v1';
+  const KEY='undss-public-sample-demo-v2';
   const MONTHS=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
   let db;
-  let country='Exampleland (fictional)', stationId='DEMO001', editStationId='DEMO001', editSrmId='DEMO-SRM', incidentCountry='Exampleland (fictional)';
+  let country='Alderra (fictional)', stationId='DEMO-ALD-01', editStationId='DEMO-ALD-01', editSrmId='DEMO-SRM-ALD-1', incidentCountry='Alderra (fictional)';
   let activePage='overview', activeSettingsTab='stations',toastTimer=null;
   const $=(id)=>document.getElementById(id);
   const text=(id,v)=>{$(id).textContent=String(v??'—')};
@@ -242,8 +2237,8 @@ window.UNDSS_SEED_DATA =
   function renderCoordinates(s){const valid=geoValid(s),lat=Number(s.latitude),lon=Number(s.longitude);
       text('coordinateDisplay',valid?coordText(s):'Not available');
       text('coordinateProvenance',valid?fmt(s.coordinateSource)+' · '+fmt(s.coordinatePrecision):'Add a coordinate pair and its source in Settings → Duty stations');
-      text('coordinateCaution',valid?(s.coordinatePrecision||'').toLowerCase().includes('administrative')?'Administrative-area centre only — NOT a precise town or station point.':'Approximate public locality reference, not a verified UN premises or ICSC site.':'No coordinates supplied for this record.');
-      $('copyCoords').disabled=!valid;$('mapCoords').disabled=!valid;
+      text('coordinateCaution',valid?(s.coordinatePrecision||'').toLowerCase().includes('administrative')?'Administrative-area centre only — NOT a precise town or station point.':'Demonstration-only coordinate. Not a real-world or operational location.':'No coordinates supplied for this record.');
+      $('copyCoords').disabled=!valid;$('mapCoords').disabled=true;$('mapCoords').title='Map disabled — coordinates are fictional';
       const link=$('coordinateSourceLink'),url=String(s.coordinateSourceUrl||'').trim();
       if(valid&&/^https:\/\/[^\s]+$/i.test(url)){link.href=url;link.hidden=false;}else{link.removeAttribute('href');link.hidden=true;}
   }
@@ -263,7 +2258,7 @@ window.UNDSS_SEED_DATA =
       return {es,total:es.reduce((a,e)=>a+(Number(e.count)||0),0),months:byMonth,categories:Object.entries(cats).sort((a,b)=>b[1]-a[1])};
   }
   function renderIncidents(c){const x=groupIncidents(c);text('metricIncidents',x.es.length?x.total.toLocaleString('en-US'):'—');text('incidentBigTotal',x.es.length?x.total.toLocaleString('en-US'):'—');
-      text('metricIncidentsDetail',x.es.length?'Country-wide · source reporting period':'No country-level SSIRS records');text('incidentPeriodText',x.es.length?(db.metadata.incidentsPeriod||'Available months'):'No data imported');
+      text('metricIncidentsDetail',x.es.length?'Country-level · fabricated sample':'No simulated SSIRS records');text('incidentPeriodText',x.es.length?(db.metadata.incidentsPeriod||'Available months'):'No data imported');
       const used=x.months.filter(y=>y.value>0);const monthEnd=used.length?MONTHS.indexOf(used[used.length-1].month)+1:9;
       const draw=x.months.slice(0,Math.max(9,monthEnd)),max=Math.max(1,...draw.map(z=>z.value));
       $('incidentChart').setAttribute('aria-label',`Monthly recorded incidents in ${c}: ${draw.map(z=>z.month+' '+z.value).join(', ')}`);
@@ -318,7 +2313,7 @@ window.UNDSS_SEED_DATA =
       area.id=id;area.name=name;area.country=c;area.threats=[...$('srmEditThreats').children].map(tr=>({category:tr.querySelector('.threat-category').value.trim(),threatLevel:tr.querySelector('.threat-level').value.trim(),presentRisk:tr.querySelector('.threat-present').value.trim(),projectedRisk:tr.querySelector('.threat-projected').value.trim()})).filter(x=>x.category);
       if(id!==editSrmId){db.stations.forEach(s=>{if(s.srmAreaId===editSrmId)s.srmAreaId=id;});}editSrmId=id;save();renderSrmEditorSelect();fillSrmEditor();toast('SRM assessment saved.');}
   function addSrm(){const id=window.prompt('New SRM area ID (must be unique):');if(!id)return;const rid=id.trim();if(!rid)return;if(db.srmAreas.some(x=>x.id===rid))return toast('That SRM ID already exists.');
-      db.srmAreas.push({id:rid,country:country||'Exampleland (fictional)',name:'New SRM area',threats:[],sourceRows:[]});editSrmId=rid;save();renderSrmEditorSelect();fillSrmEditor();toast('New SRM area created. Update its name and add threats.');}
+      db.srmAreas.push({id:rid,country:country||'Alderra (fictional)',name:'New SRM area',threats:[],sourceRows:[]});editSrmId=rid;save();renderSrmEditorSelect();fillSrmEditor();toast('New SRM area created. Update its name and add threats.');}
   function renderEventCountryOptions(){const cs=[...new Set([...countries(),...db.incidents.map(x=>x.country)])].filter(Boolean).sort();if(!cs.includes(incidentCountry))incidentCountry=cs[0]||'';setOptions($('eventCountrySelect'),cs.map(c=>({value:c,label:c})),incidentCountry);}
   function appendEventRow(t){const tr=document.createElement('tr');tr.dataset.id=t.id||'';tr.dataset.sourceRow=t.sourceRow||'';
       tr.innerHTML=`<td><select class="event-month" aria-label="Month">${MONTHS.map(m=>`<option ${m===t.month?'selected':''}>${m}</option>`).join('')}</select></td><td><input class="wide-input event-category" aria-label="Incident category" value="${h(t.category||'')}"></td><td><input class="event-count" type="number" min="0" aria-label="Incident count" value="${Number(t.count)||0}"></td><td><input class="wide-input event-details" aria-label="Incident details" value="${h(t.details||'')}"></td><td><button type="button" class="remove-row" aria-label="Delete incident record">×</button></td>`;
@@ -349,7 +2344,7 @@ window.UNDSS_SEED_DATA =
   async function importData(e){const file=e.target.files?.[0];if(!file)return;try{const raw=await file.text();const d=JSON.parse(raw);if(!validDataset(d))throw new Error('Missing duty stations, SRM areas, incidents, or metadata.');if(!window.confirm('Replace the current browser dataset with this JSON file? Export a backup first if needed.'))return;
           db=d;stationId=db.stations[0]?.id||'';country=db.stations[0]?.country||'';editStationId=stationId;editSrmId=db.srmAreas[0]?.id||'';incidentCountry=country;save();renderSettings();renderSelectors();renderOverview();toast('JSON dataset imported.');}
       catch(err){toast('Import failed: '+String(err.message||err).slice(0,100))}finally{e.target.value='';}}
-  function resetData(){if(!window.confirm('Restore the original pilot dataset? This clears every local edit. Export a backup first if needed.'))return;db=clone(window.UNDSS_SEED_DATA);stationId='DEMO001';country='Exampleland (fictional)';editStationId='DEMO001';editSrmId='DEMO-SRM';incidentCountry='Exampleland (fictional)';try{localStorage.removeItem(KEY)}catch(e){}text('saveStatus','Original fictional dataset');renderSettings();renderSelectors();renderOverview();toast('Original pilot restored.');}
+  function resetData(){if(!window.confirm('Restore the populated synthetic demo dataset? This clears every local edit. Export a backup first if needed.'))return;db=clone(window.UNDSS_SEED_DATA);stationId='DEMO-ALD-01';country='Alderra (fictional)';editStationId='DEMO-ALD-01';editSrmId='DEMO-SRM-ALD-1';incidentCountry='Alderra (fictional)';try{localStorage.removeItem(KEY)}catch(e){}text('saveStatus','Original fully populated fictional dataset');renderSettings();renderSelectors();renderOverview();toast('Original pilot restored.');}
   function wire(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>setPage(b.dataset.page)));
       document.querySelectorAll('[data-settingstab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.settingstab)));
       $('countrySelect').addEventListener('change',e=>{country=e.target.value;stationId=stationsIn(country)[0]?.id||'';$('stationSearch').value='';renderSelectors();renderOverview();});
@@ -405,7 +2400,7 @@ window.UNDSS_SEED_DATA =
   
     <div class="main-column">
       <header class="topbar">
-        <div class="breadcrumb"><span>DSS</span><span class="crumb-separator">/</span><span>ICSC WORKSPACE</span><span class="crumb-separator">/</span><strong id="currentBread">EXAMPLELAND (FICTIONAL)</strong></div>
+        <div class="breadcrumb"><span>DSS</span><span class="crumb-separator">/</span><span>ICSC WORKSPACE</span><span class="crumb-separator">/</span><strong id="currentBread">FOUR FICTIONAL COUNTRIES</strong></div>
         <div class="top-actions">
           <span class="privacy-indicator"><span class="lock-icon">◆</span> LOCAL WORKSPACE</span>
           <button class="small-action" id="quickExport" type="button">↓ <span>Export JSON</span></button>
@@ -424,15 +2419,15 @@ window.UNDSS_SEED_DATA =
               <div class="field-wrap flex-grow"><label for="stationSelect">DUTY STATION & ICSC ID</label><div class="select-wrap"><select id="stationSelect"></select></div></div>
               <div class="field-wrap"><label for="stationSearch">FIND DUTY STATION</label><input id="stationSearch" type="search" placeholder="Search name or ICSC ID" aria-label="Filter duty stations"></div>
             </div>
-            <div class="selector-footer"><div class="selector-station"><span class="station-circle">◎</span> <span id="stationDisplay">Illustrative Capital</span> <span id="stationIdDisplay" class="id-chip">DEMO001</span></div><div id="pilotCount" class="selector-meta">2 illustrative locations</div></div>
+            <div class="selector-footer"><div class="selector-station"><span class="station-circle">◎</span> <span id="stationDisplay">Northhaven (sample)</span> <span id="stationIdDisplay" class="id-chip">DEMO-ALD-01</span></div><div id="pilotCount" class="selector-meta">20 fictional duty stations</div></div>
           </div>
   
           <div class="coordinates-panel" aria-label="Selected duty station coordinates">
             <div class="coordinates-icon" aria-hidden="true">⌖</div>
             <div class="coordinates-content"><div class="coordinates-label">PUBLIC GEOGRAPHIC REFERENCE <span class="geo-badge">NOT ICSC VERIFIED</span></div>
               <div class="coordinates-number" id="coordinateDisplay">4.841564, 31.619985</div>
-              <div class="coordinates-provenance" id="coordinateProvenance">United Nations Cartographic Section / UNGEGN · City reference point</div>
-              <div class="coordinates-caution" id="coordinateCaution">Location is an approximate locality reference, not an operational site.</div>
+              <div class="coordinates-provenance" id="coordinateProvenance">Generated demonstration coordinates · fictional latitude/longitude</div>
+              <div class="coordinates-caution" id="coordinateCaution">This location is invented and is not an operational site.</div>
             </div>
             <div class="coordinates-actions"><button type="button" class="outline-btn" id="copyCoords" disabled>Copy coordinates</button><button type="button" class="outline-btn" id="mapCoords" disabled>Open external map ↗</button><a class="coordinates-source" id="coordinateSourceLink" target="_blank" rel="noopener noreferrer" hidden>Source record ↗</a></div>
           </div>
@@ -485,7 +2480,7 @@ window.UNDSS_SEED_DATA =
         </section>
         <section id="settingsPage" class="page">
           <div class="page-heading settings-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> CONFIGURATION & MAINTENANCE <span class="eyebrow-pill">LOCAL EDITOR</span></div><h1>Settings & data editor<span class="heading-period">.</span></h1><p class="intro">Update records, add duty stations or countries, and manage future reporting cycles.</p></div></div>
-          <div class="settings-banner"><span class="banner-dot">●</span><div><b>All changes are local to this browser.</b> Export a JSON backup to move changes to another computer or prepare an updated shared version. No information is sent to a server.</div><span id="saveStatus" class="saved-label">Original fictional dataset</span></div>
+          <div class="settings-banner"><span class="banner-dot">●</span><div><b>All changes are local to this browser.</b> Export a JSON backup to move changes to another computer or prepare an updated shared version. No information is sent to a server.</div><span id="saveStatus" class="saved-label">Original fully populated fictional dataset</span></div>
           <div class="tabbar" role="tablist" aria-label="Settings categories">
             <button class="tab active" type="button" data-settingstab="stations" role="tab" aria-selected="true">Duty stations</button>
             <button class="tab" type="button" data-settingstab="srm" role="tab" aria-selected="false">SRM assessments</button>
@@ -502,7 +2497,7 @@ window.UNDSS_SEED_DATA =
                   <div class="form-field"><label for="editLatitude">Latitude (decimal degrees)</label><input id="editLatitude" type="number" min="-90" max="90" step="any" placeholder="e.g. 4.841564"></div>
                   <div class="form-field"><label for="editLongitude">Longitude (decimal degrees)</label><input id="editLongitude" type="number" min="-180" max="180" step="any" placeholder="e.g. 31.619985"></div>
                   <div class="form-field form-span"><label for="editCoordinatePrecision">Coordinate type / verification</label><select id="editCoordinatePrecision"><option value="Town/city reference point">Town/city reference point (not ICSC verified)</option><option value="Administrative area reference — not a verified duty-station point">Administrative-area reference</option><option value="Verified ICSC duty-station point">Verified ICSC duty-station point (only with evidence)</option><option value="Manually entered — verification pending">Manually entered — verification pending</option></select></div>
-                  <div class="form-field"><label for="editCoordinateSource">Coordinates source</label><input id="editCoordinateSource" placeholder="UNGEGN / GeoNames / ICSC document"></div><div class="form-field"><label for="editCoordinateSourceUrl">Source URL (optional)</label><input id="editCoordinateSourceUrl" type="url" placeholder="https://..."></div>
+                  <div class="form-field"><label for="editCoordinateSource">Coordinates source</label><input id="editCoordinateSource" placeholder="Synthetic source (no real-world validation)"></div><div class="form-field"><label for="editCoordinateSourceUrl">Source URL (optional)</label><input id="editCoordinateSourceUrl" type="url" placeholder="https://..."></div>
   <div class="form-field"><label for="editDanger" id="labelEditDanger">Danger Pay · October 2026</label><select id="editDanger"><option value="Y">Yes (Y)</option><option value="N">No (N)</option><option value="—">Not available</option></select></div>
                   <div class="form-field"><label for="editDangerPrior" id="labelEditDangerPrior">Danger Pay · July 2026</label><select id="editDangerPrior"><option value="Y">Yes (Y)</option><option value="N">No (N)</option><option value="—">Not available</option></select></div><div class="form-field"><label for="editHardship">Hardship classification</label><input id="editHardship" placeholder="e.g. E"></div>
                   <div class="form-field"><label for="editSecCurrent">Current security rating</label><input id="editSecCurrent" placeholder="e.g. D"></div><div class="form-field"><label for="editSecProposed">Recommended security rating</label><input id="editSecProposed" placeholder="e.g. D"></div>
@@ -512,7 +2507,7 @@ window.UNDSS_SEED_DATA =
                 </div><div class="form-footer"><button type="button" class="danger-outline" id="removeStation">Delete station</button><button type="submit" class="primary-btn">Save station changes</button></div></form>
                 <div id="stationSourceRows" class="row-reference"></div>
               </article>
-              <aside class="panel add-card" id="addStationPanel"><div class="panel-titleline"><div><span class="section-kicker">EXPAND COVERAGE</span><h3>Add a new duty station</h3></div></div><p class="muted">Add another location in Exampleland (fictional) or start a new country. The new station appears in both dropdowns immediately.</p><form id="newStationForm"><div class="form-field"><label for="newCountry">Country / area</label><input id="newCountry" placeholder="Country name" value="Exampleland (fictional)" required></div><div class="form-field"><label for="newStation">Duty station name</label><input id="newStation" placeholder="e.g. New duty station" required></div><div class="form-field"><label for="newCode">ICSC duty station ID</label><input id="newCode" placeholder="e.g. DEMO999" required></div><div class="form-field"><label for="newLatitude">Latitude (optional)</label><input id="newLatitude" type="number" min="-90" max="90" step="any" placeholder="Decimal degrees"></div><div class="form-field"><label for="newLongitude">Longitude (optional)</label><input id="newLongitude" type="number" min="-180" max="180" step="any" placeholder="Decimal degrees"></div><button type="submit" class="primary-btn block-btn">Add station record</button></form><div class="add-info"><strong>Important</strong><p>New stations start with unavailable indicators until you populate them. Add country-wide SSIRS reports and SRM areas in their respective tabs.</p></div></aside>
+              <aside class="panel add-card" id="addStationPanel"><div class="panel-titleline"><div><span class="section-kicker">EXPAND COVERAGE</span><h3>Add a new duty station</h3></div></div><p class="muted">Add another location in Alderra (fictional) or start a new country. The new station appears in both dropdowns immediately.</p><form id="newStationForm"><div class="form-field"><label for="newCountry">Country / area</label><input id="newCountry" placeholder="Country name" value="Alderra (fictional)" required></div><div class="form-field"><label for="newStation">Duty station name</label><input id="newStation" placeholder="e.g. New duty station" required></div><div class="form-field"><label for="newCode">ICSC duty station ID</label><input id="newCode" placeholder="e.g. DEMO999" required></div><div class="form-field"><label for="newLatitude">Latitude (optional)</label><input id="newLatitude" type="number" min="-90" max="90" step="any" placeholder="Decimal degrees"></div><div class="form-field"><label for="newLongitude">Longitude (optional)</label><input id="newLongitude" type="number" min="-180" max="180" step="any" placeholder="Decimal degrees"></div><button type="submit" class="primary-btn block-btn">Add station record</button></form><div class="add-info"><strong>Important</strong><p>New stations start with unavailable indicators until you populate them. Add country-wide SSIRS reports and SRM areas in their respective tabs.</p></div></aside>
             </div>
           </div>
           <div class="settings-tab" id="settings-srm"><article class="panel settings-card"><div class="panel-titleline"><div><span class="section-kicker">RISK MATRIX EDITOR</span><h3>SRM regional assessments</h3></div><button class="outline-btn" id="addSrmArea" type="button">+ New SRM area</button></div><div class="form-row"><div class="form-field grow"><label for="srmEditSelect">SELECT SRM AREA</label><select id="srmEditSelect"></select></div></div><form id="srmEditForm"><div class="form-columns"><div class="form-field"><label for="editSrmCountry">Country</label><input id="editSrmCountry" required></div><div class="form-field"><label for="editSrmName">SRM area</label><input id="editSrmName" required></div><div class="form-field form-span"><label for="editSrmId">SRM ID</label><input id="editSrmId" required></div></div><div class="table-label table-label-spaced">THREAT LEVELS & RISK VALUES</div><div class="table-scroll"><table class="data-table edit-table"><thead><tr><th>CATEGORY</th><th>THREAT</th><th>PRESENT</th><th>PROJECTED</th><th></th></tr></thead><tbody id="srmEditThreats"></tbody></table></div><div class="form-footer"><button type="button" id="addThreat" class="outline-btn">+ Add threat</button><button type="submit" class="primary-btn">Save SRM assessment</button></div></form></article></div>
